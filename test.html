@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="test.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/themes/BareBones/BareBones.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="home" class="type-home">
+
+	<div data-role="header" data-theme="a">
+		<h1 class="giant">Workman arts</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<div class="content-secondary">
+	  	<ul data-role="listview" data-inset="true" data-theme="a" data-dividertheme="a">
+  			<li data-role="list-divider">check it</li>
+  			<li><a href="#logs" data-transition="slidefade">Bloob</a></li>
+  			<li><a href="#logs">Floob</a></li>
+  			<li><a href="#logs">Loob</a></li>
+  			<li data-role="list-divider">oooout</li>
+  			<li><a href="#logs">Floob</a></li>
+    		<li><a href="#logs">Loob</a></li>
+  		</ul>
+  		<a href="#bar" data-role="button" data-icon="star">Tweet us</a>
+	</div>
+	
+	 <div class="content-primary">
+		  <p>Because the world is your aubergine.</p>	
+		</div>
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" class="nav-glyphish-example" data-theme="a" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+		<ul>
+			<li><a href="#home" id="home-btn" data-icon="custom">Home</a></li>
+			<li><a href="#logs" id="logs-btn" data-icon="custom">Logs</a></li>
+			<li><a href="#ideas" id="ideas-btn" data-icon="custom">Ideas</a></li>
+			<li><a href="#danger" id="skull-btn" data-icon="custom">Danger</a></li>
+			<li><a href="#coffee" id="coffee-btn" data-icon="custom">Coffee</a></li>
+		</ul>
+		</div>
+	</div>
+
+</div><!-- /page -->
+
+<div data-role="page" id="logs">
+
+	<div data-role="header" data-theme="a">
+		<h1 class="fredoka">logs</h1>
+	
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<p>Hello world</p>		
+		
+		<ul data-role="listview" data-inset="true" data-theme="a" data-dividertheme="a">
+			<li data-role="list-divider">Logs</li>
+			<li><a href="#" data-icon="star">Kate</a></li>
+			<li data-role="list-divider">Assignments</li>
+			
+		</ul>
+
+		<a href="#home" data-role="button" data-icon="home" data-transition="slide">Home</a>
+    
+		
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
