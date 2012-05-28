@@ -1,0 +1,69 @@
+{
+	"artists": [
+		{
+			"firstName" : "John",
+			"lastName" : "Smith",
+			"mediums" : "",
+			"bio": "",
+			"artworks" : [
+				{
+					"src" : "asdasdas.jpg",
+					"title": "",
+					"description": "",
+					"medium": "",
+					"size": "",
+					"date": "2012-04-20",
+					"price": "400.00"
+				},
+				{
+					"src" : "asdasdasdasd.jpg",
+					"title": "",
+					"description": "",
+					"medium": "",
+					"size": "",
+					"date": "2012-04-20",
+					"price": "400.00"
+				}
+			]
+		},
+		{
+			"firstName" : "Barbara",
+			"lastName" : "White",
+			"mediums" : "",
+			"bio": "",
+			"artworks" : [
+				{
+					"src" : "asdasdas.jpg",
+					"title": "",
+					"description": "",
+					"medium": "",
+					"size": "",
+					"date": "2012-04-20",
+					"price": "400.00"
+				}
+			]
+		}
+
+	],
+	"events": [
+		{
+			"title": "Rendezvous with Madness",
+			"startDate": "2012-12-30",
+			"endDate": "2012-12-30",
+			"venue": "",
+			"venueAddress": "",
+			"ticketPrice": "20.32",
+			"description": "",
+			"trailers": [
+				{
+					"filmTitle": "",
+					"director": "",
+					"srcVimeo": "http://vimeo.com/asdasdasd",
+					"srcYoutube": "http://youtube.com/asdasdasd"
+				}
+			]
+		}
+	]
+}
+
+	
