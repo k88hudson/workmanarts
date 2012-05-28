@@ -25,9 +25,12 @@ $(document).ready( function(){
 			  });
 			});
 
-	  });
+			//Reload on page load
+			$('#home').live('pageshow', function () {
+			 		$container.isotope( "reLayout" );
+			});
 
-		
+	  });	
 
 	}()); //isotope
 
