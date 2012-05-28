@@ -29,6 +29,8 @@ $(document).ready( function(){
 				}
 		    });
 
+		    $container.isotope( "reLayout" );
+
 		  	// update columnWidth on window resize
 			$(window).smartresize(function(){
 			  $container.isotope({
