@@ -1,6 +1,6 @@
 .giant {
   font-size: 2em !important;
-  margin: .3em !important;
+  margin: .1em !important;
 }
 
 li[data-role="list-divider"] {
