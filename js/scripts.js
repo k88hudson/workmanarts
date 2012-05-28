@@ -3,9 +3,12 @@ $(document).ready( function(){
 	//hide iPhone chrome
 	window.scroll = 0;
 
-	var imgDir = "media/",
+	var $container = $('.mini-gallery'),
+			imgDir = "media/",
 			imgPrefix = "img",
 			imgFiletype = "jpg";
+
+	$container.hide();	
 
 	//details images
 	$(".mini-gallery a").click(function(){
@@ -14,8 +17,7 @@ $(document).ready( function(){
 
 	//isotope
 	(function(){
-		var $container = $('.mini-gallery');
-		$container.hide();
+		
 		$container.fadeIn();
 		$container.imagesLoaded( function(){
 	    $container.isotope({
