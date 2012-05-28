@@ -11,7 +11,7 @@ li[data-role="list-divider"] {
 .nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
 .nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
 #wa-btn .ui-icon { width:50px!important; height: 50px!important; margin-left: -25px!important; background: url(media/wa-logo.png) 50% 50% no-repeat; background-size: 50px 50px; }
-#logs-btn .ui-icon { background:  url(css/themes/BareBones/icons/179-notepad.png) 50% 50% no-repeat; background-size: 22px 28px;  }
+#events-btn .ui-icon { background:  url(css/themes/BareBones/icons/83-calendar.png) 50% 50% no-repeat; background-size: 22px 28px;  }
 #login .ui-icon { background:  url(css/themes/BareBones/icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
 #ideas-btn .ui-icon { background:  url(css/themes/BareBones/icons/84-lightbulb.png) 50% 50% no-repeat;  background-size: 14px 21px; }
 #coffee-btn .ui-icon { background:  url(css/themes/BareBones/icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
@@ -19,8 +19,7 @@ li[data-role="list-divider"] {
 #chat .ui-icon { background: url(css/deep-purple/icons/09-chat2.png) 50% 50% no-repeat; background-size: 24px 22px; }
 
 /* MAIN STRUCTURE */
-.ui-content { padding: 5px 0; }
-.content-primary {  max-height: 600px; overflow-y: hidden; }
+#home .ui-content { padding: 5px 0; }
 
 .type-interior .content-secondary { margin: 10px -15px 0; }
 .type-home .ui-content { overflow: hidden; position: relative; }
@@ -35,18 +34,14 @@ li[data-role="list-divider"] {
 }
 
 /* RESPONSIVE TAILORING */
-.hide-mobile, .hide-tablet {
-	display: none;
-}
+.hide-mobile, .hide-tablet { display: none; }
+.mobile-only { display: block; }
 
 /* Regular view -- remember, the above is mobile first.*/
 @media all and (min-width: 650px){
-	.hide-mobile {
-		display: inline;
-	}
-	.hide-tablet{
-		display: none;
-	}
+	.mobile-only { display: none; }
+	.hide-mobile { display: inline; }
+	.hide-tablet{ display: none; }
 	p.intro {
 		margin: 2em 0;
 	}

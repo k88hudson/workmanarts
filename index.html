@@ -24,11 +24,11 @@
 	<div data-role="content" data-theme="a" >	
 		<div class="content-secondary hide-mobile">
 	  	<ul id="main-navigation" data-role="listview" data-inset="true" data-theme="a" data-dividertheme="a">
-  			<li data-role="list-divider">check it</li>
-  			<li><a href="#logs" data-transition="slidefade">Bloob</a></li>
+  			<li data-role="list-divider">Workman arts</li>
+  			<li><a href="#events" data-transition="slidefade">Events</a></li>
   			<li><a href="#logs">Floob</a></li>
   			<li><a href="#logs">Loob</a></li>
-  			<li data-role="list-divider">oooout</li>
+  			<li data-role="list-divider">Whatever</li>
   			<li><a href="#logs">Floob</a></li>
     		<li><a href="#logs">Loob</a></li>
   		</ul>
@@ -58,11 +58,11 @@
 		
 	</div><!-- /content -->
 	
-	<div data-role="footer" class="nav-glyphish-example" data-theme="a" data-position="fixed">
+	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
 		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
 		<ul>
 			<li><a href="#home" id="wa-btn" data-icon="custom"></a></li>
-			<li><a href="#logs" id="logs-btn" data-icon="custom">Logs</a></li>
+			<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
 			<li><a href="#ideas" id="ideas-btn" data-icon="custom">Ideas</a></li>
 			<li><a href="#danger" id="skull-btn" data-icon="custom">Danger</a></li>
 			<li><a href="#coffee" id="coffee-btn" data-icon="custom">Coffee</a></li>
@@ -80,12 +80,85 @@
 	</div><!-- /header -->
 	<div data-role="content" data-theme="a">	
 		<img id="big-img" src="media/img1.jpg">	
-		<a href="" data-role="button">Appreciate</a>
-		<a href="" data-role="button">Learn More</a>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">Title: Bloopy bloop</div>
+			<div class="ui-block-b">Medium: Oil</div>
+			<div class="ui-block-a">Size: 100' x 100'</div>
+			<div class="ui-block-b">Date: Nov 1 2011</div>
+		</div><!-- /grid-b -->
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><button type="submit" data-theme="b">Appreciate</button></div>
+			<div class="ui-block-b"><button type="submit" data-theme="c">Learn More</button></div>	   
+		</fieldset>
+		
 	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+		<ul>
+			<li><a href="#home" id="wa-btn" data-icon="custom"></a></li>
+			<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+			<li><a href="#ideas" id="ideas-btn" data-icon="custom">Ideas</a></li>
+			<li><a href="#danger" id="skull-btn" data-icon="custom">Danger</a></li>
+			<li><a href="#coffee" id="coffee-btn" data-icon="custom">Coffee</a></li>
+		</ul>
+		</div>
+	</div>
 
 </div><!-- /page -->
 
+<div data-role="page" id="events">
+	<div data-role="header" data-theme="a">
+		<a href="index.html" class="reload-isotope" data-icon="back" data-theme="a">Back</a>
+		<h1>Events</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<ul data-role="listview" class="ui-listview"  data-filter="true">
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+				<div class="ui-btn-inner ui-li">
+					<div class="ui-btn-text">
+						<a href="#" class="ui-link-inherit">
+						<h3 class="ui-li-heading">Stupid event</h3>
+						<p class="ui-li-desc">
+							Where stupid things happen
+						</p>
+						</a>
+					</div>
+					<span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+				</div>
+				</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+				<div class="ui-btn-inner ui-li">
+					<div class="ui-btn-text">
+						<a href="#" class="ui-link-inherit">
+						<h3 class="ui-li-heading">Fun Times</h3>
+						<p class="ui-li-desc">
+							No homework
+						</p>
+						</a>
+					</div>
+					<span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+				</div>
+				</li>
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+				<div class="ui-btn-inner ui-li">
+					<div class="ui-btn-text">
+						<a href="#" class="ui-link-inherit">
+						<h3 class="ui-li-heading">Flying on Boats</h3>
+						<p class="ui-li-desc">
+							It's possible &ndash; really!
+						</p>
+						</a>
+					</div>
+					<span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+				</div>
+				</li>
+		</ul>
+		
+	</div><!-- /content -->
+
+</div><!-- /page -->
 
 <div data-role="page" id="logs">
 
