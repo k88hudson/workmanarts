@@ -7,8 +7,11 @@
 	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="test.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="css/themes/BareBones/BareBones.css" />
+	<link rel="stylesheet" href="mini-gallery/mini-gallery.css" />
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head> 
 <body> 
 
@@ -18,9 +21,9 @@
 		<h1 class="giant">Workman arts</h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="a">	
-		<div class="content-secondary">
-	  	<ul data-role="listview" data-inset="true" data-theme="a" data-dividertheme="a">
+	<div data-role="content" data-theme="a" >	
+		<div class="content-secondary hide-mobile">
+	  	<ul id="main-navigation" data-role="listview" data-inset="true" data-theme="a" data-dividertheme="a">
   			<li data-role="list-divider">check it</li>
   			<li><a href="#logs" data-transition="slidefade">Bloob</a></li>
   			<li><a href="#logs">Floob</a></li>
@@ -30,10 +33,17 @@
     		<li><a href="#logs">Loob</a></li>
   		</ul>
   		<a href="#bar" data-role="button" data-icon="star">Tweet us</a>
-	</div>
-	
-	 <div class="content-primary">
-		  <p>Because the world is your aubergine.</p>	
+		</div>
+
+		<div class="content-primary">
+			<ul class="mini-gallery">
+				<li><a href="#img-details" for="1" data-transition="fade"><img src="media/img1.jpg" ></a></li>
+				<li><a href="#img-details" for="2" data-transition="fade"><img src="media/img2.jpg" ></a></li>
+				<li><a href="#img-details" for="3" data-transition="fade"><img src="media/img3.jpg" ></a></li>
+				<li><a href="#img-details" for="4" data-transition="fade"><img src="media/img4.jpg" ></a></li>
+				<li><a href="#img-details" for="5" data-transition="fade"><img src="media/img5.jpg" ></a></li>
+				<li><a href="#img-details" for="6" data-transition="fade"><img src="media/img6.jpg" ></a></li>
+			</ul>
 		</div>
 		
 	</div><!-- /content -->
@@ -51,6 +61,18 @@
 	</div>
 
 </div><!-- /page -->
+
+<div data-role="page" id="img-details">
+
+	<div data-role="header" data-theme="a">
+		<h1>Image 1</h1>
+	</div><!-- /header -->
+	<div data-role="content" data-theme="a">	
+		<img id="big-img" src="media/img1.jpg">	
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
 
 <div data-role="page" id="logs">
 

@@ -7,6 +7,7 @@ li[data-role="list-divider"] {
   text-transform: uppercase;
 }
 
+/* ICONS */
 .nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
 .nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
 #home-btn .ui-icon { background:  url(css/themes/BareBones/icons/53-house.png) 50% 50% no-repeat; background-size: 22px 22px; }
@@ -15,39 +16,30 @@ li[data-role="list-divider"] {
 #ideas-btn .ui-icon { background:  url(css/themes/BareBones/icons/84-lightbulb.png) 50% 50% no-repeat;  background-size: 14px 21px; }
 #coffee-btn .ui-icon { background:  url(css/themes/BareBones/icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
 #skull-btn .ui-icon { background:  url(css/themes/BareBones/icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
+#chat .ui-icon { background: url(css/deep-purple/icons/09-chat2.png) 50% 50% no-repeat; background-size: 24px 22px; }
 
+/* MAIN STRUCTURE */
+.ui-content { padding: 5px 0; }
+.content-primary {  max-height: 600px; overflow-y: hidden; }
 
-#chat .ui-icon {
-	background: url(css/deep-purple/icons/09-chat2.png) 50% 50% no-repeat;
-	background-size: 24px 22px;
+.type-interior .content-secondary { margin: 10px -15px 0; }
+.type-home .ui-content { overflow: hidden; position: relative; }
+.type-interior .ui-content { padding-bottom: 0; }
+.content-secondary .ui-collapsible { padding: 0 15px 10px; }
+.content-secondary .ui-collapsible-content { padding: 0; }
+.content-secondary .ui-listview { margin: 0; }
+
+/* IMAGE DETAILS */
+#img-details img {
+	width: 100%;
 }
 
-.type-interior .content-secondary {
-	margin: 10px -15px 0;
-}
-.type-home .ui-content {
-	overflow: hidden;
-	position: relative;
-}
-.type-interior .ui-content {
-	padding-bottom: 0;
-}
-.content-secondary .ui-collapsible {
-	padding: 0 15px 10px;
-
-}
-.content-secondary .ui-collapsible-content {
-	padding: 0;
-}
-.content-secondary .ui-listview {
-	margin: 0;
-}
+/* RESPONSIVE TAILORING */
 .hide-mobile, .hide-tablet {
 	display: none;
 }
 
-/* docs site layout */
-
+/* Regular view -- remember, the above is mobile first.*/
 @media all and (min-width: 650px){
 	.hide-mobile {
 		display: inline;
