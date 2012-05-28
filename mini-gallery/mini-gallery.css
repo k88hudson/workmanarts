@@ -1,7 +1,7 @@
 .mini-gallery { list-style: none outside none; padding: 0; margin: 0; }
 
 .mini-gallery li {
-	width: 157px;
+	width: 33.333%;
 	min-height: 100px;
 	float: left;
 }
@@ -53,29 +53,6 @@
           transition-duration: 0s;
 }
 
-@media all and (min-width: 650px){
-	.mini-gallery li { width: 200px; }
+@media all and (min-width: 750px){
+	/*.mini-gallery li { width: 33.333% }*/
 }
-
-/*
-.mini-gallery { list-style: none outside none; padding: 0; }
-.mini-gallery li {
-	width: 33.333%;
-	float: left;
-}
-.mini-gallery li > a {
-	display: block;
-	margin: 5px;
-	height: 170px;
-	overflow: hidden;
-}
-.mini-gallery li > a > img{
-	width: 200%;
-}
-
-
-@media all and (min-width: 650px){
-	.mini-gallery li > a { height: auto; }
-	.mini-gallery li > a > img{ width: 100%; }
-}
-*/

@@ -17,7 +17,18 @@ $(document).ready( function(){
 	    $container.isotope({
 	      itemSelector: 'li'
 	    });
+
+		  // update columnWidth on window resize
+			$(window).smartresize(function(){
+			  $container.isotope({
+			    masonry: { columnWidth: $container.width() / 3 }
+			  });
+			});
+
 	  });
+
+		
+
 	}()); //isotope
 
 });
