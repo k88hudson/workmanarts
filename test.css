@@ -7,6 +7,8 @@ li[data-role="list-divider"] {
   text-transform: uppercase;
 }
 
+.ui-listview li.ui-li { padding: 0; }
+
 /* ICONS */
 .nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
 .nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
