@@ -34,6 +34,8 @@ li[data-role="list-divider"] {
 #img-details img {
 	width: 100%;
 }
+#author-details img { width: 90%; float: left; margin-right: 10px;}
+#author-details p { margin-top: 0;}
 
 /* RESPONSIVE TAILORING */
 .hide-mobile, .hide-tablet { display: none; }
