@@ -18,8 +18,9 @@ $(document).ready( function(){
 	//isotope
 	(function(){
 		
-		$container.fadeIn();
+		
 		$container.imagesLoaded( function(){
+			$container.fadeIn();
 	    $container.isotope({
 	      itemSelector: 'li'
 	    });
