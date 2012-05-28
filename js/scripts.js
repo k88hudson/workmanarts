@@ -1,4 +1,8 @@
 $(document).ready( function(){
+
+	//hide iPhone chrome
+	window.scroll = 0;
+
 	var imgDir = "media/",
 			imgPrefix = "img",
 			imgFiletype = "jpg";
