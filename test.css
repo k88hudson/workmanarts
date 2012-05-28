@@ -6,8 +6,7 @@
 li[data-role="list-divider"] {
   text-transform: uppercase;
 }
-
-.ui-listview li.ui-li { padding: 0; }
+.ui-listview li.ui-li {  padding: 3px; }
 
 /* ICONS */
 .nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
