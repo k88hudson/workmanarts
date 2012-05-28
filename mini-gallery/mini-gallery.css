@@ -2,9 +2,9 @@
 
 .mini-gallery li {
 	width: 33.333%;
-	min-height: 100px;
 	float: left;
 }
+
 .mini-gallery li > a {
 	display: block;
 	margin: 0;
