@@ -10,7 +10,7 @@ li[data-role="list-divider"] {
 /* ICONS */
 .nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
 .nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
-#home-btn .ui-icon { background:  url(css/themes/BareBones/icons/53-house.png) 50% 50% no-repeat; background-size: 22px 22px; }
+#wa-btn .ui-icon { width:50px!important; height: 50px!important; margin-left: -25px!important; background: url(media/wa-logo.png) 50% 50% no-repeat; background-size: 50px 50px; }
 #logs-btn .ui-icon { background:  url(css/themes/BareBones/icons/179-notepad.png) 50% 50% no-repeat; background-size: 22px 28px;  }
 #login .ui-icon { background:  url(css/themes/BareBones/icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
 #ideas-btn .ui-icon { background:  url(css/themes/BareBones/icons/84-lightbulb.png) 50% 50% no-repeat;  background-size: 14px 21px; }
