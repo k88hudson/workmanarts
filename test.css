@@ -30,9 +30,17 @@ li[data-role="list-divider"] {
 .content-secondary .ui-listview { margin: 0; }
 
 /* IMAGE DETAILS */
-#img-details img {
-	width: 100%;
+
+.img-container { position: relative; }
+.img-container .learn-more { 
+	position: absolute; top: 10%; left: 5px; width: 30px; height: 80%;
+	background: rgba(255,255,255,.7);
+	border-radius: 20px;
 }
+.img-container .learn-more .icon { position: absolute; top: 47%; left: 3px; display: block; width: 18px; height: 18px; background: url(css/themes/default/images/icons-18-black.png) no-repeat; background-position: -144px 50%; border-radius: 20px; }
+#img-details img { width: 100%; }
+
+
 #author-details img { width: 90%; float: left; margin-right: 10px;}
 #author-details p { margin-top: 0;}
 #event-details img { width:100%}

@@ -38,6 +38,11 @@ $(document).ready( function(){
 			  });
 			});
 
+			//Details
+			$(".img-container .learn-more").click(function(){
+				
+			})
+
 			//Reload on page load
 			$('#home').live('pageshow', function () {
 			 		$container.isotope( "reLayout" );

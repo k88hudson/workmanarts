@@ -65,13 +65,13 @@
 	
 	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
 		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
-		<ul>
-			<li><a href="#home" id="wa-btn" data-icon="custom"></a></li>
-			<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>	
-			<li><a id="ideas-btn" >Gallery</a></li>
-			<li><a id="skull-btn">About</a></li>
-			<li><a href="#coffee" id="coffee-btn" >Search</a></li>	
-		</ul>
+			<ul>
+				<li><a href="#home" id="wa-btn" data-icon="custom"></a></li>
+				<li><a id="ideas-btn" >Gallery</a></li>
+				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+				<li><a id="skull-btn">About</a></li>
+				<li><a href="#coffee" id="coffee-btn" >Search</a></li>	
+			</ul>
 		</div>
 	</div>
 
@@ -79,11 +79,14 @@
 
 <div data-role="page" id="img-details">
 	<div data-role="header" data-theme="a">
-		<a href="index.html" class="reload-isotope" data-icon="back" data-theme="a">Back</a>
+		<a href="index.html" class="reload-isotope" data-theme="a">Back</a>
 		<h1>My fun image by Mambo Pambo</h1>
 	</div><!-- /header -->
-	<div data-role="content" data-theme="a">	
-		<img id="big-img" src="media/img1.jpg">	
+	<div data-role="content" data-theme="a">
+		<div class="img-container">	
+			<img id="big-img" src="media/img1.jpg">	
+			<a href="#img-learn-more" data-transition="slide" data-direction="reverse" class="learn-more"><span class="icon"></span></a>
+		</div>
 		<div data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
 			<div class="ui-btn-inner ui-li">
 				<div class="ui-btn-text">
@@ -108,6 +111,32 @@
 			<div class="ui-block-a"><button type="submit" data-theme="b">{{Appreciate}}</button></div>
 			<div class="ui-block-b"><button type="submit" data-theme="c">Learn More</button></div>	   
 		</fieldset>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+		<ul>
+			<li><a href="#home" id="wa-btn" data-icon="custom"></a></li>
+			<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+			<li><a href="#ideas" id="ideas-btn" data-icon="custom">Ideas</a></li>
+			<li><a href="#danger" id="skull-btn" data-icon="custom">Danger</a></li>
+			<li><a href="#coffee" id="coffee-btn" data-icon="custom">Coffee</a></li>
+		</ul>
+		</div>
+	</div>
+
+</div><!-- /page -->
+
+<div data-role="page" id="img-learn-more">
+	<div data-role="header" data-theme="a">
+		<a href="index.html" class="reload-isotope" data-theme="a">Back</a>
+		<h1>My fun image by Mambo Pambo</h1>
+	</div><!-- /header -->
+	<div data-role="content" data-theme="a">
+		<p>Northern Europe in the 15th century was deeply influenced by the mystical religious movement devotio moderna, exemplified by Thomas a Kempis and his Imitation of Christ, in which emotion and prayerful imagination of scenes from the life of Christ are encouraged in order to enhance one's feelings of being actually present as the sacred mysteries unfold. Rogier's religious figures suffer, mourn, bear witness or simply exist with dignified pathos, their controlled and restrained yet eminently expressive sentiments made real through subtle facial expressions, the dramatic twisting of hands and fingers, even the rhythmic torment of the folds of a garment.</p>
+
+		<p>The foremost example of Rogier's passionate pictorial skill can be found in his great early masterpiece, the Descent from the Cross of around 1435, now in Madrid's Prado Museum. Too delicate to be shipped abroad, the painting was represented in Leuven by a specially-made video montage. Rogier has chosen a quietly dramatic moment at the conclusion of Christ's violent passion to evoke a broad expression of the emotions of participants in the drama, stimulating in turn an affective response in the viewer.</p>
 		
 	</div><!-- /content -->
 
@@ -260,7 +289,6 @@
 			<li data-role="list-divider">Logs</li>
 			<li><a href="#" data-icon="star">Kate</a></li>
 			<li data-role="list-divider">Assignments</li>
-			
 		</ul>
 
 		<a href="#home" data-role="button" data-icon="home" data-transition="slide">Home</a>
