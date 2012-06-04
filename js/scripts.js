@@ -40,7 +40,7 @@ $(document).ready( function(){
 
 			//Details
 			$(".img-container .learn-more").click(function(){
-				
+
 			})
 
 			//Reload on page load
