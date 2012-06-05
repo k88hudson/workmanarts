@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="test.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile.css" />
 	<link rel="stylesheet" href="css/themes/BareBones/BareBones.css" />
 	<link rel="stylesheet" href="mini-gallery/mini-gallery.css" />
@@ -85,8 +85,21 @@
 	<div data-role="content" data-theme="a">
 		<div class="img-container">	
 			<img id="big-img" src="media/img1.jpg">	
-			<a href="#img-learn-more" data-transition="slide" data-direction="reverse" class="learn-more"><span class="icon"></span></a>
 		</div>
+		<a class="extra-info" data-role="button">Learn More</a>
+		<a class="extra-info" data-role="button" data-icon="search" data-mini="true"></a>
+
+		<div class="ui-grid-a">
+			<div class="ui-block-a">Title: Bloopy bloop</div>
+			<div class="ui-block-b">Medium: Oil</div>
+			<div class="ui-block-a">Size: 100' x 100'</div>
+			<div class="ui-block-b">Date: Nov 1 2011</div>
+		</div><!-- /grid-b -->
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><button type="submit" data-theme="b" data-inline="true">Appreciate</button></div>
+			<div class="ui-block-b"><a href="#img-learn-more" data-theme="c" data-role="button" data-inline="true">Learn More</a></div>	   
+		</fieldset>
+
 		<div data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
 			<div class="ui-btn-inner ui-li">
 				<div class="ui-btn-text">
@@ -101,16 +114,6 @@
 				<span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
 			</div>
 		</div>
-		<div class="ui-grid-a">
-			<div class="ui-block-a">Title: Bloopy bloop</div>
-			<div class="ui-block-b">Medium: Oil</div>
-			<div class="ui-block-a">Size: 100' x 100'</div>
-			<div class="ui-block-b">Date: Nov 1 2011</div>
-		</div><!-- /grid-b -->
-		<fieldset class="ui-grid-a">
-			<div class="ui-block-a"><button type="submit" data-theme="b">{{Appreciate}}</button></div>
-			<div class="ui-block-b"><button type="submit" data-theme="c">Learn More</button></div>	   
-		</fieldset>
 		
 	</div><!-- /content -->
 
