@@ -11,7 +11,7 @@ li[data-role="list-divider"] {
 /* ICONS */
 /* Add our actual icons here .... */
 /* Use this as a guide: */
-#skull-btn .ui-icon { background:  url(css/themes/BareBones/icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
+.skull-btn .ui-icon { background:  url(css/themes/BareBones/icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
 
 
 
