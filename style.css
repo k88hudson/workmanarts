@@ -1,0 +1,177 @@
+.giant {
+  font-size: 2em !important;
+  margin: .1em !important;
+}
+
+li[data-role="list-divider"] {
+  text-transform: uppercase;
+}
+.ui-listview li.ui-li {  padding: 3px; }
+
+/* ICONS */
+/* Add our actual icons here .... */
+/* Use this as a guide: */
+#skull-btn .ui-icon { background:  url(css/themes/BareBones/icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
+
+
+
+
+
+/* ------- */
+.nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+.nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+#wa-btn .ui-icon { width:50px!important; height: 50px!important; margin-left: -25px!important; background: url(media/wa-logo.png) 50% 50% no-repeat; background-size: 50px 50px; }
+#events-btn .ui-icon { background:  url(css/themes/BareBones/icons/83-calendar.png) 50% 50% no-repeat; background-size: 22px 28px;  }
+#login .ui-icon { background:  url(css/themes/BareBones/icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
+#ideas-btn .ui-icon { background:  url(css/themes/BareBones/icons/84-lightbulb.png) 50% 50% no-repeat;  background-size: 14px 21px; }
+#coffee-btn .ui-icon { background:  url(css/themes/BareBones/icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
+#skull-btn .ui-icon { background:  url(css/themes/BareBones/icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
+#chat .ui-icon { background: url(css/deep-purple/icons/09-chat2.png) 50% 50% no-repeat; background-size: 24px 22px; }
+
+/* MAIN STRUCTURE */
+#home .ui-content { padding: 5px 0; }
+
+.type-interior .content-secondary { margin: 10px -15px 0; }
+.type-home .ui-content { overflow: hidden; position: relative; }
+.type-interior .ui-content { padding-bottom: 0; }
+.content-secondary .ui-collapsible { padding: 0 15px 10px; }
+.content-secondary .ui-collapsible-content { padding: 0; }
+.content-secondary .ui-listview { margin: 0; }
+
+/* IMAGE DETAILS */
+.img-container { 
+	position: relative; 
+	max-height: 200px;
+	overflow: hidden;
+}
+a.extra-info{
+	font-size: 13px;
+	z-index: 100;
+	display: inline-block;
+}
+
+.expanded { 
+	max-height: none;
+	overflow: visible;
+}
+
+.img-container .learn-more .icon { position: absolute; top: 47%; left: 3px; display: block; width: 18px; height: 18px; background: url(css/themes/default/images/icons-18-black.png) no-repeat; background-position: -144px 50%; border-radius: 20px; }
+#img-details img { width: 100%; }
+
+
+#author-details img { width: 90%; float: left; margin-right: 10px;}
+#author-details p { margin-top: 0;}
+#event-details img { width:100%}
+
+/* RESPONSIVE TAILORING */
+.hide-mobile, .hide-tablet { display: none; }
+.mobile-only { display: block; }
+
+/* Regular view -- remember, the above is mobile first.*/
+@media all and (min-width: 650px){
+	.mobile-only { display: none; }
+	.hide-mobile { display: inline; }
+	.hide-tablet{ display: none; }
+	p.intro {
+		margin: 2em 0;
+	}
+	.type-home .ui-content,
+	.type-interior .ui-content {
+		padding: 0;
+	}
+	.type-interior .ui-content {
+		overflow: hidden;
+	}
+	.content-secondary {
+		text-align: left;
+		float: left;
+		width: 45%;
+	}
+	.content-secondary,
+	.type-interior .content-secondary {
+		margin: 0 0 20px 2%;
+		padding: 20px 4% 0 0;
+	}
+	.type-index .content-secondary {
+		padding: 0;
+	}
+	.content-secondary .ui-collapsible {
+		margin: 0;
+		padding: 0;
+	}
+	.content-secondary .ui-collapsible-content {
+		border: none;
+	}
+	.type-index .content-secondary .ui-listview {
+		margin: 0;
+	}
+
+	.content-primary {
+		width: 45%;
+		float: right;
+		margin-top: 30px;
+		margin-right: 1%;
+		padding-right: 1%;
+	}
+	.content-primary ul:first-child {
+		margin-top: 0;
+	}
+
+	.type-interior .content-primary {
+		padding: 1.5em 6% 3em 0;
+		margin: 0;
+	}
+	/* fix up the collapsibles - expanded on desktop */
+	.content-secondary .ui-collapsible-heading {
+		display: none;
+	}
+	.content-secondary .ui-collapsible-contain {
+		margin:0;
+	}
+	.content-secondary .ui-collapsible-content {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+	.type-interior  .content-secondary .ui-li-divider {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.type-interior .content-secondary {
+		margin: 0;
+		padding: 0;
+	}
+	
+}
+@media all and (min-width: 750px){
+	.hide-tablet, .hide-mobile {
+		display: inline;
+	}
+	.content-secondary {
+		width: 34%;
+	}
+	.content-primary {
+		width: 56%;
+		padding-right: 1%;
+	}	
+}
+
+@media all and (min-width: 1200px){
+	.content-secondary {
+		width: 30%;
+		padding-right:6%;
+		margin: 30px 0 20px 5%;
+	}
+	.type-interior .content-secondary {
+		margin: 0;
+		padding: 0;
+	}
+	.content-primary {
+		width: 50%;
+		margin-right: 5%;
+		padding-right: 3%;
+	}
+	.type-interior .content-primary {
+		width: 60%;
+	}
+}
