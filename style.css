@@ -23,9 +23,9 @@ li[data-role="list-divider"] {
 #wa-btn .ui-icon { width:50px!important; height: 50px!important; margin-left: -25px!important; background: url(media/wa-logo.png) 50% 50% no-repeat; background-size: 50px 50px; }
 #events-btn .ui-icon { background:  url(css/themes/BareBones/icons/83-calendar.png) 50% 50% no-repeat; background-size: 22px 28px;  }
 #login .ui-icon { background:  url(css/themes/BareBones/icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
-#ideas-btn .ui-icon { background:  url(css/themes/BareBones/icons/84-lightbulb.png) 50% 50% no-repeat;  background-size: 14px 21px; }
-#coffee-btn .ui-icon { background:  url(css/themes/BareBones/icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
-#skull-btn .ui-icon { background:  url(css/themes/BareBones/icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
+#gallery-btn .ui-icon { background:  url(css/themes/BareBones/icons/121-landscape.png) 50% 50% no-repeat;  background-size: 24px 18px; }
+#search-btn .ui-icon { background:  url(css/themes/BareBones/icons/06-magnify.png) 50% 50% no-repeat;  background-size: 24px 24px; }
+#info-btn .ui-icon { background:  url(css/themes/BareBones/icons/info-icon.png) 50% 50% no-repeat;  background-size: 25px 25px; }
 #chat .ui-icon { background: url(css/deep-purple/icons/09-chat2.png) 50% 50% no-repeat; background-size: 24px 22px; }
 
 /* MAIN STRUCTURE */
