@@ -21,11 +21,11 @@ li[data-role="list-divider"] {
 .nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
 .nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
 #wa-btn .ui-icon { width:50px!important; height: 50px!important; margin-left: -25px!important; background: url(media/wa-logo.png) 50% 50% no-repeat; background-size: 50px 50px; }
-#events-btn .ui-icon { background:  url(css/themes/BareBones/icons/83-calendar.png) 50% 50% no-repeat; background-size: 22px 28px;  }
 #login .ui-icon { background:  url(css/themes/BareBones/icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
-#ideas-btn .ui-icon { background:  url(css/themes/BareBones/icons/84-lightbulb.png) 50% 50% no-repeat;  background-size: 14px 21px; }
-#coffee-btn .ui-icon { background:  url(css/themes/BareBones/icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
-#skull-btn .ui-icon { background:  url(css/themes/BareBones/icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
+#gallery-btn .ui-icon { background:  url(css/themes/BareBones/icons/gallery_small.png) 100% 50% no-repeat;  background-size: 25px 25px; }
+#events-btn .ui-icon { background:  url(css/themes/BareBones/icons/event_small.png) 50% 50% no-repeat; background-size: 25px 25px;  }
+#info-btn .ui-icon { background:  url(css/themes/BareBones/icons/info_small.png) 50% 50% no-repeat;  background-size: 25px 25px; }
+#search-btn .ui-icon { background:  url(css/themes/BareBones/icons/06-magnify.png) 50% 50% no-repeat;  background-size: 24px 24px; }
 #chat .ui-icon { background: url(css/deep-purple/icons/09-chat2.png) 50% 50% no-repeat; background-size: 24px 22px; }
 
 /* MAIN STRUCTURE */
@@ -55,7 +55,16 @@ a.extra-info{
 	overflow: visible;
 }
 
-.img-container .learn-more .icon { position: absolute; top: 47%; left: 3px; display: block; width: 18px; height: 18px; background: url(css/themes/default/images/icons-18-black.png) no-repeat; background-position: -144px 50%; border-radius: 20px; }
+.img-container .learn-more .icon {
+	position: absolute;
+	top: 47%;
+	left: 3px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(css/themes/default/images/icons-18-black.png) no-repeat;
+	background-position: -144px 50%;
+	border-radius: 20px; }
 #img-details img { width: 100%; }
 
 
