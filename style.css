@@ -1,6 +1,22 @@
-.giant {
-  font-size: 2em !important;
-  margin: .1em !important;
+/* Typograpgy
+-------------------------------------------------- */
+body {
+	font-family: "Merriweather", Georgia, sans-serif;
+} 
+
+/* ---/ Typograpgy ------------------------------- */
+
+.ui-header {
+	font-family: "Cartogothic", sans-serif;
+	font-weight: 400;
+}
+.ui-header .ui-title.giant {
+  font-size: 1.3em;
+  margin: 0;
+  margin-top: .2em;
+}
+.ui-header p {
+	font-size: .9em;
 }
 
 li[data-role="list-divider"] {
