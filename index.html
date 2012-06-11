@@ -1,8 +1,9 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-	<title>My Page</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Workman Arts Gallery</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- TRY PUTTING jQuery SCRIPTS ON THE BOTTON BEFORE THE BODY ENDS 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
@@ -13,17 +14,21 @@
 	<script src="js/jquery.mobile-1.1.0.js"></script>
 	<script src="js/jquery.isotope.min.js"></script>
 	<script src="js/scripts.js"></script>
-</head> 
+     -->
+</head>
+
 <body> 
 
 <div data-role="page" id="home" class="type-home">
 
-	<div data-role="header" data-theme="a" class="hide-mobile">
+	
+	<div data-role="header" data-theme="a">
 		<h1 class="giant">Workman Arts</h1>
 		<p style="text-align: center;margin:0">Artists with extraordinary minds</p>
-	</div><!-- /header -->
+	</div>
 
-	<div data-role="content" data-theme="a" >	
+	<div data-role="content" data-theme="a" >
+    <!--	
 		<div class="content-secondary hide-mobile">
 	  	<ul id="main-navigation" data-role="listview" data-inset="true" data-theme="a" data-dividertheme="a">
   			<li data-role="list-divider">The Art</li>
@@ -39,6 +44,7 @@
   		</ul>
   		<a href="#bar" data-role="button" data-icon="star">Tweet us</a>
 		</div>
+        -->
 
 		<div class="content-primary">
 			<ul class="mini-gallery">
@@ -61,45 +67,54 @@
 			</ul>
 		</div>
 		
-	</div><!-- /content -->
+	</div>
 	
-	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
-		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+	<!--
+	<div data-role="controlgroup" data-type="horizontal" data-position="fixed">
+		<a href="#home" data-role="button" id="gallery-btn" data-icon="custom" >Gallery</a>
+		<a href="#events" data-role="button" id="events-btn" data-icon="custom">Events</a>
+		<a href="#about" data-role="button" id="info-btn" data-icon="custom">About</a>
+	</div>
+	-->
+	
+	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
 			<ul>
-				<li><a href="#home" id="wa-btn" data-icon="custom"></a></li>
-				<li><a id="ideas-btn" >Gallery</a></li>
+				<li><a href="#home" data-role="button" id="gallery-btn" data-icon="custom" >Gallery</a></li>
 				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-				<li><a id="skull-btn">About</a></li>
-				<li><a href="#coffee" id="coffee-btn" >Search</a></li>	
+				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
 			</ul>
 		</div>
-	</div>
+	</div><!-- /footer -->
+	
 
 </div><!-- /page -->
 
 <div data-role="page" id="img-details">
-	<div data-role="header" data-theme="a">
-		<a href="index.html" class="reload-isotope" data-theme="a">Back</a>
-		<h1>My fun image by Mambo Pambo</h1>
+	<div data-role="header" data-theme="a" >
+		<a href="index.html" data-rel="back" data-theme="a" data-icon="back">Back</a>
+		<h1>ARTWORK</h1>
 	</div><!-- /header -->
 	<div data-role="content" data-theme="a">
 		<div class="img-container">	
 			<img id="big-img" src="media/img1.jpg">	
 		</div>
-		<a class="extra-info" data-role="button">Learn More</a>
-		<a class="extra-info" data-role="button" data-icon="search" data-mini="true"></a>
-
+	
 		<div class="ui-grid-a">
+        <br>
 			<div class="ui-block-a">Title: Bloopy bloop</div>
 			<div class="ui-block-b">Medium: Oil</div>
 			<div class="ui-block-a">Size: 100' x 100'</div>
 			<div class="ui-block-b">Date: Nov 1 2011</div>
+            <br>
 		</div><!-- /grid-b -->
-		<fieldset class="ui-grid-a">
-			<div class="ui-block-a"><button type="submit" data-theme="b" data-inline="true">Appreciate</button></div>
-			<div class="ui-block-b"><a href="#img-learn-more" data-theme="c" data-role="button" data-inline="true">Learn More</a></div>	   
-		</fieldset>
-
+        
+	<div data-role="content" data-theme="a">
+		<ul data-role="listview" data-theme="g">
+			<li><a href="#img-learn-more">Learn More</a></li>
+		</ul>
+        </div>
+        
 		<div data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
 			<div class="ui-btn-inner ui-li">
 				<div class="ui-btn-text">
@@ -114,18 +129,18 @@
 				<span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
 			</div>
 		</div>
+        
+        <button type="submit" data-theme="b" >Appreciate</button>
 		
 	</div><!-- /content -->
 
-	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
-		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
-		<ul>
-			<li><a href="#home" id="wa-btn" data-icon="custom"></a></li>
-			<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-			<li><a href="#ideas" id="ideas-btn" data-icon="custom">Ideas</a></li>
-			<li><a href="#danger" id="skull-btn" data-icon="custom">Danger</a></li>
-			<li><a href="#coffee" id="coffee-btn" data-icon="custom">Coffee</a></li>
-		</ul>
+	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+			<ul>
+				<li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
+				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
+			</ul>
 		</div>
 	</div>
 
@@ -133,25 +148,35 @@
 
 <div data-role="page" id="img-learn-more">
 	<div data-role="header" data-theme="a">
-		<a href="index.html" class="reload-isotope" data-theme="a">Back</a>
+		<a href="index.html" data-rel="back" data-theme="a" data-icon="back">Back</a>
 		<h1>My fun image by Mambo Pambo</h1>
 	</div><!-- /header -->
 	<div data-role="content" data-theme="a">
-		<p>Northern Europe in the 15th century was deeply influenced by the mystical religious movement devotio moderna, exemplified by Thomas a Kempis and his Imitation of Christ, in which emotion and prayerful imagination of scenes from the life of Christ are encouraged in order to enhance one's feelings of being actually present as the sacred mysteries unfold. Rogier's religious figures suffer, mourn, bear witness or simply exist with dignified pathos, their controlled and restrained yet eminently expressive sentiments made real through subtle facial expressions, the dramatic twisting of hands and fingers, even the rhythmic torment of the folds of a garment.</p>
+		<p>Northern Europe in the 15th century was deeply influenced by the mystical religious 
+		movement devotio moderna, exemplified by Thomas a Kempis and his Imitation of Christ, in 
+		which emotion and prayerful imagination of scenes from the life of Christ are encouraged in 
+		order to enhance one's feelings of being actually present as the sacred mysteries unfold. 
+		Rogier's religious figures suffer, mourn, bear witness or simply exist with dignified 
+		pathos, their controlled and restrained yet eminently expressive sentiments made real 
+		through subtle facial expressions, the dramatic twisting of hands and fingers, even the 
+		rhythmic torment of the folds of a garment.</p>
 
-		<p>The foremost example of Rogier's passionate pictorial skill can be found in his great early masterpiece, the Descent from the Cross of around 1435, now in Madrid's Prado Museum. Too delicate to be shipped abroad, the painting was represented in Leuven by a specially-made video montage. Rogier has chosen a quietly dramatic moment at the conclusion of Christ's violent passion to evoke a broad expression of the emotions of participants in the drama, stimulating in turn an affective response in the viewer.</p>
+		<p>The foremost example of Rogier's passionate pictorial skill can be found in his great 
+		early masterpiece, the Descent from the Cross of around 1435, now in Madrid's Prado Museum.
+		Too delicate to be shipped abroad, the painting was represented in Leuven by a specially-
+		made video montage. Rogier has chosen a quietly dramatic moment at the conclusion of 
+		Christ's violent passion to evoke a broad expression of the emotions of participants in the 
+		drama, stimulating in turn an affective response in the viewer.</p>
 		
 	</div><!-- /content -->
 
-	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
-		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
-		<ul>
-			<li><a href="#home" id="wa-btn" data-icon="custom"></a></li>
-			<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-			<li><a href="#ideas" id="ideas-btn" data-icon="custom">Ideas</a></li>
-			<li><a href="#danger" id="skull-btn" data-icon="custom">Danger</a></li>
-			<li><a href="#coffee" id="coffee-btn" data-icon="custom">Coffee</a></li>
-		</ul>
+	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+			<ul>
+				<li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
+				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
+			</ul>
 		</div>
 	</div>
 
@@ -160,7 +185,7 @@
 
 <div data-role="page" id="author-details">
 	<div data-role="header" data-theme="a">
-		<a href="#img-details" class="reload-isotope" data-icon="back" data-theme="a">Back</a>
+		<a href="#img-details" data-rel="back" data-icon="back" data-theme="a">Back</a>
 		<h1>Jane Smith</h1>
 	</div><!-- /header -->
 	
@@ -177,15 +202,13 @@
 		
 	</div><!-- /content -->
 
-	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
-		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
-		<ul>
-			<li><a href="#home" id="wa-btn" data-icon="custom"></a></li>
-			<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-			<li><a href="#ideas" id="ideas-btn" data-icon="custom">Ideas</a></li>
-			<li><a href="#danger" id="skull-btn" data-icon="custom">Danger</a></li>
-			<li><a href="#coffee" id="coffee-btn" data-icon="custom">Coffee</a></li>
-		</ul>
+	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+			<ul>
+				<li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
+				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
+			</ul>
 		</div>
 	</div>
 
@@ -194,12 +217,12 @@
 
 <div data-role="page" id="events">
 	<div data-role="header" data-theme="a">
-		<a href="index.html" class="reload-isotope" data-icon="back" data-theme="a">Back</a>
+		<a href="index.html" data-rel="back" data-icon="back" data-theme="a" >Back</a> <!-- data-iconpos="notext" -->
 		<h1>Events</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" class="ui-content" role="main">	
-		<ul data-role="listview" class="ui-listview" data-filter="true">
+		<ul data-role="listview" class="ui-listview" >
 			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
 			<div class="ui-btn-inner ui-li">
 				<div class="ui-btn-text">
@@ -207,7 +230,7 @@
 					<img src="http://www.katehudsondesign.com/uploads/t1nygrab/Screen%20Shot%202012-05-28%20at%206.43.07%20PM.png" class="ui-li-thumb">
 					<h3 class="ui-li-heading">Rendezvous with Madness</h3>
 					<p class="ui-li-desc">
-						Bloopa sdasd asd asd asd asda
+						Film Festival
 					</p>
 					</a>
 				</div>
@@ -218,10 +241,10 @@
 			<div class="ui-btn-inner ui-li">
 				<div class="ui-btn-text">
 					<a href="#event-details" class="ui-link-inherit">
-					<img src="media/img3.jpg" class="ui-li-thumb">
-					<h3 class="ui-li-heading">Warning</h3>
+					<img src="media/img3.jpg" class="ui-li-thumb"> <!-- REPLACE IMAGE -->
+					<h3 class="ui-li-heading">Being Scene</h3>
 					<p class="ui-li-desc">
-						Hot Chip
+						Art Exhibition
 					</p>
 					</a>
 				</div>
@@ -232,10 +255,10 @@
 			<div class="ui-btn-inner ui-li">
 				<div class="ui-btn-text">
 					<a href="#event-details" class="ui-link-inherit">
-					<img src="media/img6.jpg" class="ui-li-thumb">
-					<h3 class="ui-li-heading">Wolfgang Amadeus Phoenix</h3>
+					<img src="media/img6.jpg" class="ui-li-thumb"> <!-- REPLACE IMAGE -->
+					<h3 class="ui-li-heading">Mad Couture Catwalk</h3>
 					<p class="ui-li-desc">
-						Phoenix
+						A runway-style presentation of wearable couture
 					</p>
 					</a>
 				</div>
@@ -246,60 +269,94 @@
 		</ul>
 		
 	</div><!-- /content -->
+	
+	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+			<ul>
+				<li><a href="#home" data-role="button" id="gallery-btn" data-icon="custom" >Gallery</a></li>
+				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
+			</ul>
+		</div>
+	</div><!-- /footer -->
 
 </div><!-- /page -->
 <div data-role="page" id="event-details">
 	<div data-role="header" data-theme="a">
-		<a href="index.html" class="reload-isotope" data-icon="back" data-theme="a">Back</a>
-		<h1>My fun event</h1>
+		<a href="index.html" data-rel="back" data-icon="back" data-theme="a">Back</a>
+		<h1>Rendezvous with Madness</h1>
 	</div><!-- /header -->
 	<div data-role="content" data-theme="a">	
 		<ul data-role="listview" data-theme="g">
 			<img src="http://www.katehudsondesign.com/uploads/t1nygrab/Screen%20Shot%202012-05-28%20at%206.20.03%20PM.png">
-			<li><a href="#">Buy Ticket</a></li>
 			<li><a href="#">Event Details</a></li>
 			<li><a href="#">Trailers</a></li>
-			<li><a href="#">Submission</a></li>
+			<li><a href="#">Buy Tickets</a></li>
 			<li><a href="#">Get Involved</a></li>
 		</ul>
 	</div><!-- /content -->
 
 	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
-		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
-		<ul>
-			<li><a href="#home" id="wa-btn" data-icon="custom"></a></li>
-			<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-			<li><a href="#ideas" id="ideas-btn" data-icon="custom">Ideas</a></li>
-			<li><a href="#danger" id="skull-btn" data-icon="custom">Danger</a></li>
-			<li><a href="#coffee" id="coffee-btn" data-icon="custom">Coffee</a></li>
-		</ul>
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+			<ul>
+				<li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
+				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
+			</ul>
 		</div>
 	</div>
 
 </div><!-- /page -->
 
-<div data-role="page" id="logs">
-
+<div data-role="page" id="about">
 	<div data-role="header" data-theme="a">
-		<h1 class="fredoka">logs</h1>
-	
+		<a href="index.html" data-rel="back" data-icon="back" data-theme="a">Back</a>
+		<h1>About Workman Arts</h1>
 	</div><!-- /header -->
+	<div data-role="content" data-theme="a">
+		<h4>Vision</h4>
+		<p>Workman Arts is an arts and mental health company known internationally for its artistic 
+		collaborations, presentations, knowledge exchange, best practices, and research in the area 
+		of the impact of the arts on the quality of life of people living with mental illness and 
+		addiction.</p>
 
-	<div data-role="content" data-theme="a">	
-		<p>Hello world</p>		
-		
-		<ul data-role="listview" data-inset="true" data-theme="a" data-dividertheme="a">
-			<li data-role="list-divider">Logs</li>
-			<li><a href="#" data-icon="star">Kate</a></li>
-			<li data-role="list-divider">Assignments</li>
-		</ul>
-
-		<a href="#home" data-role="button" data-icon="home" data-transition="slide">Home</a>
-    
+		<h4>Mission</h4>
+		<p>Workman Arts (WA) facilitates aspiring, emerging and established artists with mental 
+		illness and addiction issues to develop and refine their art form through its arts training 
+		programs, public performance/exhibit opportunities and partnering with other art 
+		organizations. As well, WA promotes a greater public understanding of mental illness and 
+		addiction through the creation, presentation and discussion of the artistic media.</p>
 		
 	</div><!-- /content -->
 
+	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+			<ul>
+				<li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
+				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
+			</ul>
+		</div>
+	</div>
+
 </div><!-- /page -->
+
+
+
+<!-- jQuery AT THE BOTTOM -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile.css" />
+	<link rel="stylesheet" href="css/themes/BareBones/BareBones.css" /> 
+	<link rel="stylesheet" href="mini-gallery/mini-gallery.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.1.0.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/scripts.js"></script>
+
 
 </body>
 </html>

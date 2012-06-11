@@ -14,16 +14,16 @@
 
 .ui-bar-a {
 	border: 1px solid #B3B3B3 /*{a-bar-border}*/;
-	background: #f0f0f0 /*{a-bar-background-color}*/;
-	color: #3E3E3E /*{a-bar-color}*/;
-	font-weight: bold;
-	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ #ffffff /*{a-bar-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #f0f0f0 /*{a-bar-background-start}*/), to( #f0f0f0 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #f0f0f0 /*{a-bar-background-start}*/, #f0f0f0 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #f0f0f0 /*{a-bar-background-start}*/, #f0f0f0 /*{a-bar-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #f0f0f0 /*{a-bar-background-start}*/, #f0f0f0 /*{a-bar-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #f0f0f0 /*{a-bar-background-start}*/, #f0f0f0 /*{a-bar-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #f0f0f0 /*{a-bar-background-start}*/, #f0f0f0 /*{a-bar-background-end}*/);
+	background: #F26722 /*{a-bar-background-color}*/;
+	color: #ffffff /*{a-bar-color} font colour*/;
+	font-weight: regular;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ 0px /*{a-bar-shadow-y}*/ 0px /*{a-bar-shadow-radius}*/ #ffffff /*{a-bar-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #F26722 /*{a-bar-background-start}*/), to( #F26722 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #F26722 /*{a-bar-background-start}*/, #F26722 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #F26722 /*{a-bar-background-start}*/, #F26722 /*{a-bar-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #F26722 /*{a-bar-background-start}*/, #F26722 /*{a-bar-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #F26722 /*{a-bar-background-start}*/, #F26722 /*{a-bar-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #F26722 /*{a-bar-background-start}*/, #F26722 /*{a-bar-background-end}*/);
 }
 
 .ui-bar-a .ui-link-inherit {
@@ -169,18 +169,18 @@ a.ui-link-inherit {
 -----------------------------------------------------------------------------------------------------------*/
 .ui-btn-active {
 	border: 1px solid #9b1717 /*{global-active-border}*/;
-	background: #ff3d42 /*{global-active-background-color}*/;
+	background: #ffcc00 /*{global-active-background-color}*/;
 	font-weight: bold;
 	color: #ffffff /*{global-active-color}*/;
 	cursor: pointer;
 	text-shadow: 0 /*{global-active-shadow-x}*/ 1px /*{global-active-shadow-y}*/ 1px /*{global-active-shadow-radius}*/ #000000 /*{global-active-shadow-color}*/;
 	text-decoration: none;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #ff3d42 /*{global-active-background-start}*/), to( #ff3d42 /*{global-active-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #ff3d42 /*{global-active-background-start}*/, #ff3d42 /*{global-active-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #ff3d42 /*{global-active-background-start}*/, #ff3d42 /*{global-active-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #ff3d42 /*{global-active-background-start}*/, #ff3d42 /*{global-active-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #ff3d42 /*{global-active-background-start}*/, #ff3d42 /*{global-active-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #ff3d42 /*{global-active-background-start}*/, #ff3d42 /*{global-active-background-end}*/);
+	background-image: -webkit-linear-gradient( #ffcc00 /*{global-active-background-start}*/, #ffcc00 /*{global-active-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #ffcc00 /*{global-active-background-start}*/, #ffcc00 /*{global-active-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #ffcc00 /*{global-active-background-start}*/, #ffcc00 /*{global-active-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #ffcc00 /*{global-active-background-start}*/, #ffcc00 /*{global-active-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #ffcc00 /*{global-active-background-start}*/, #ffcc00 /*{global-active-background-end}*/);
 	   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif /*{global-font-family}*/;
 }
 .ui-btn-active a.ui-link-inherit {
@@ -567,9 +567,9 @@ a.ui-link-inherit {
 
 .ui-focus,
 .ui-btn:focus {
-	-moz-box-shadow: 0px 0px 12px #ff3d42 /*{global-active-background-color}*/;
-	-webkit-box-shadow: 0px 0px 12px #ff3d42 /*{global-active-background-color}*/;
-	box-shadow: 0px 0px 12px #ff3d42 /*{global-active-background-color}*/;
+	-moz-box-shadow: 0px 0px 12px #ffcc00 /*{global-active-background-color}*/;
+	-webkit-box-shadow: 0px 0px 12px #ffcc00 /*{global-active-background-color}*/;
+	box-shadow: 0px 0px 12px #ffcc00 /*{global-active-background-color}*/;
 }
 
 /* unset box shadow in browsers that don't do it right
