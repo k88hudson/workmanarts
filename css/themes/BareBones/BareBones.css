@@ -51,7 +51,7 @@
 .ui-bar-a select,
 .ui-bar-a textarea,
 .ui-bar-a button {
-	   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif /*{global-font-family}*/;
 }
 .ui-body-a,
 .ui-overlay-a {
@@ -75,7 +75,7 @@
 .ui-body-a select,
 .ui-body-a textarea,
 .ui-body-a button {
-	   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif /*{global-font-family}*/;
 }
 
 .ui-body-a .ui-link-inherit {
@@ -151,7 +151,7 @@
 .ui-btn-up-a,
 .ui-btn-hover-a,
 .ui-btn-down-a {
-	   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif /*{global-font-family}*/;
 	text-decoration: none;
 }
 
@@ -167,24 +167,21 @@ a.ui-link-inherit {
 
 /* Active class used as the "on" state across all themes
 -----------------------------------------------------------------------------------------------------------*/
-.ui-btn-active {
+.ui-btn-active { /* WHAT HAPPENS WHEN YOU CLICK THE BUTTON */
 	border: 1px solid #9b1717 /*{global-active-border}*/;
-	background: #ff3d42 /*{global-active-background-color}*/;
+	background: #ffcc00 /*{global-active-background-color}*/;
 	font-weight: bold;
 	color: #ffffff /*{global-active-color}*/;
 	cursor: pointer;
 	text-shadow: 0 /*{global-active-shadow-x}*/ 1px /*{global-active-shadow-y}*/ 1px /*{global-active-shadow-radius}*/ #000000 /*{global-active-shadow-color}*/;
 	text-decoration: none;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #ff3d42 /*{global-active-background-start}*/), to( #ff3d42 /*{global-active-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #ff3d42 /*{global-active-background-start}*/, #ff3d42 /*{global-active-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #ff3d42 /*{global-active-background-start}*/, #ff3d42 /*{global-active-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #ff3d42 /*{global-active-background-start}*/, #ff3d42 /*{global-active-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #ff3d42 /*{global-active-background-start}*/, #ff3d42 /*{global-active-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #ff3d42 /*{global-active-background-start}*/, #ff3d42 /*{global-active-background-end}*/);
-	   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif /*{global-font-family}*/;
-}
-.ui-btn-active a.ui-link-inherit {
-	color: #ffffff /*{global-active-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #4e4e4e /*{global-active-background-start}*/), to( #4e4e4e /*{global-active-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #4e4e4e /*{global-active-background-start}*/, #4e4e4e /*{global-active-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #4e4e4e /*{global-active-background-start}*/, #4e4e4e /*{global-active-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #4e4e4e /*{global-active-background-start}*/, #4e4e4e /*{global-active-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #4e4e4e /*{global-active-background-start}*/, #4e4e4e /*{global-active-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #4e4e4e /*{global-active-background-start}*/, #4e4e4e /*{global-active-background-end}*/);
+	   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif /*{global-font-family}*/;
 }
 
 
