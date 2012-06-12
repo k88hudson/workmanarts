@@ -3,20 +3,32 @@
 	<head> 
 	<title>Workman Arts Gallery</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/fonts/fonts.css">
-<script type="text/javascript">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile.css" />
+	<link rel="stylesheet" href="css/themes/BareBones/BareBones.css" />
+	<link rel="stylesheet" href="mini-gallery/mini-gallery.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.1.0.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/scripts.js"></script>
+    
+    <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-31734816-2']);
-  _gaq.push(['_trackPageview']);
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-31734816-2']);
+		_gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
 
-</script>
+	</script>
+    
 </head>
 
 <body> 
@@ -26,11 +38,10 @@
 	
 	<div data-role="header" data-theme="a">
 		<h1 class="giant">Workman Arts</h1>
-		<p style="text-align: center;margin:0">Artists with extraordinary minds</p>
 	</div>
 
 	<div data-role="content" data-theme="a" >
-    	
+    <!--	
 		<div class="content-secondary hide-mobile">
 	  	<ul id="main-navigation" data-role="listview" data-inset="true" data-theme="a" data-dividertheme="a">
   			<li data-role="list-divider">The Art</li>
@@ -46,7 +57,7 @@
   		</ul>
   		<a href="#bar" data-role="button" data-icon="star">Tweet us</a>
 		</div>
-        
+        -->
 
 		<div class="content-primary">
 			<ul class="mini-gallery">
@@ -71,10 +82,11 @@
 		
 	</div>
 	
+	
 	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
 		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
 			<ul>
-				<li><a href="#home" data-role="button" id="gallery-btn" data-icon="custom" >Gallery</a></li>
+				<li><a href=# id="gallery-btn" data-icon="custom" class="ui-btn-active ui-state-persist">Gallery</a></li>
 				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
 				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
 			</ul>
@@ -90,6 +102,8 @@
 		<h1>ARTWORK</h1>
 	</div><!-- /header -->
 	<div data-role="content" data-theme="a">
+    <ul data-role="listview" data-theme="g">
+			
 		<div class="img-container">	
 			<img id="big-img" src="media/img1.jpg">	
 		</div>
@@ -103,11 +117,10 @@
             <br>
 		</div><!-- /grid-b -->
         
-	
-		<ul data-role="listview" data-theme="g">
-			<li><a href="#img-learn-more">Learn More</a></li>
-		</ul>
-       
+	<!--
+	<ul data-role="listview" data-theme="g"> -->
+		<li><a href="#img-learn-more">Learn More</a></li>
+	</ul>  
         
 		<div data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
 			<div class="ui-btn-inner ui-li">
@@ -143,7 +156,7 @@
 <div data-role="page" id="img-learn-more">
 	<div data-role="header" data-theme="a">
 		<a href="index.html" data-rel="back" data-theme="a" data-icon="back">Back</a>
-		<h1>My fun image by Mambo Pambo</h1>
+		<h1>Piece Title</h1>
 	</div><!-- /header -->
 	<div data-role="content" data-theme="a">
 		<p>Northern Europe in the 15th century was deeply influenced by the mystical religious 
@@ -267,8 +280,8 @@
 	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
 		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
 			<ul>
-				<li><a href="#home" data-role="button" id="gallery-btn" data-icon="custom" >Gallery</a></li>
-				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+				<li><a href="#home" data-role="button" id="gallery-btn" data-icon="custom">Gallery</a></li>
+				<li><a href=# id="events-btn" data-icon="custom" class="ui-btn-active ui-state-persist">Events</a></li>
 				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
 			</ul>
 		</div>
@@ -294,7 +307,7 @@
 		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
 			<ul>
 				<li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
-				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+				<li><a href="#events" id="events-btn" data-icon="custom" class="ui-btn-active ui-state-persist" >Events</a></li>
 				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
 			</ul>
 		</div>
@@ -305,9 +318,10 @@
 <div data-role="page" id="about">
 	<div data-role="header" data-theme="a">
 		<a href="index.html" data-rel="back" data-icon="back" data-theme="a">Back</a>
-		<h1>About Workman Arts</h1>
+		<h1>About</h1>
 	</div><!-- /header -->
 	<div data-role="content" data-theme="a">
+    	<img src="media/wa-banner-logo.png">
 		<h4>Vision</h4>
 		<p>Workman Arts is an arts and mental health company known internationally for its artistic 
 		collaborations, presentations, knowledge exchange, best practices, and research in the area 
@@ -328,7 +342,7 @@
 			<ul>
 				<li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
 				<li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
+				<li><a href=# id="info-btn" data-icon="custom" class="ui-btn-active ui-state-persist">About</a></li>
 			</ul>
 		</div>
 	</div>
@@ -337,7 +351,7 @@
 
 
 
-<!-- jQuery AT THE BOTTOM -->
+<!-- jQuery AT THE BOTTOM for faster load time?
 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
@@ -350,7 +364,7 @@
 	<script src="js/jquery.mobile-1.1.0.js"></script>
 	<script src="js/jquery.isotope.min.js"></script>
 	<script src="js/scripts.js"></script>
-
+	-->
 
 </body>
 </html>
