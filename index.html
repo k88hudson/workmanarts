@@ -37,11 +37,12 @@
 
 	
 	<div data-role="header" data-theme="a">
+    	<img border="0" src="media/wa-logo-small.png" style="float:left;display:inline"/>
 		<h1 class="giant">Workman Arts</h1>
 	</div>
 
 	<div data-role="content" data-theme="a" >
-    <!--	
+    	
 		<div class="content-secondary hide-mobile">
 	  	<ul id="main-navigation" data-role="listview" data-inset="true" data-theme="a" data-dividertheme="a">
   			<li data-role="list-divider">The Art</li>
@@ -57,7 +58,6 @@
   		</ul>
   		<a href="#bar" data-role="button" data-icon="star">Tweet us</a>
 		</div>
-        -->
 
 		<div class="content-primary">
 			<ul class="mini-gallery">
@@ -79,9 +79,7 @@
 				<li><a href="#img-details" for="8" data-transition="fade"><img src="media/img8.jpg" ></a></li>
 			</ul>
 		</div>
-		
 	</div>
-	
 	
 	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
 		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
@@ -102,7 +100,7 @@
 		<h1>ARTWORK</h1>
 	</div><!-- /header -->
 	<div data-role="content" data-theme="a">
-	
+			
 		<div class="img-container">	
 			<img id="big-img" src="media/img1.jpg">	
 		</div>
@@ -114,9 +112,10 @@
 			<div class="ui-block-b">Date: Nov 1 2011</div>
 		</div><!-- /grid-b -->
         
-	<ul data-role="listview" data-theme="d" style="padding: 15px 15px">
-		<li><a href="#img-learn-more">Learn More</a></li>
-	</ul>
+		<ul data-role="listview" data-theme="d" style="padding: 15px 15px">
+			<li><a href="#img-learn-more">Learn More</a></li>
+		</ul>
+    
         
 		<div data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
 			<div class="ui-btn-inner ui-li">
@@ -133,7 +132,9 @@
 			</div>
 		</div>
         
-        <button type="submit" data-theme="b" >Appreciate</button>
+        <div class="appreciate">
+    		<a href="#" onClick="alert('Thank you!')">Appreciate This</a>
+		</div>
 		
 	</div><!-- /content -->
 
@@ -152,7 +153,7 @@
 <div data-role="page" id="img-learn-more">
 	<div data-role="header" data-theme="a">
 		<a href="index.html" data-rel="back" data-theme="a" data-icon="back">Back</a>
-		<h1>Piece Title</h1>
+		<h1>ARTWORK</h1>
 	</div><!-- /header -->
 	<div data-role="content" data-theme="a">
 		<p>Northern Europe in the 15th century was deeply influenced by the mystical religious 
@@ -198,10 +199,10 @@
 		<p>For every method set in getSortData, Isotope uses that method to build the data for sorting. The data cache is built on initialization so it can be quickly accessed when sorting. With the methods above, we have built data for an item elements name, symbol, number, weight and category.</p>
 		</fieldset>
 		<p>Sorting elements is done with the sortBy option. The value needs to match the property name used in the getSortData object.</p>
-		<fieldset class="ui-grid-a">
-			<div class="ui-block-a"><button type="submit" data-theme="b">Appreciate</button></div>
-			<div class="ui-block-b"><button type="submit" data-theme="c">Contact</button></div>	   
-		</fieldset>
+        <div class="appreciate">
+    		<a href="#" onClick="alert('Thank you!')">Appreciate This</a>
+		</div>
+		<button type="submit" data-theme="c">Contact</button></div>
 		
 	</div><!-- /content -->
 
@@ -219,7 +220,7 @@
 
 
 <div data-role="page" id="events">
-	<div data-role="header" data-theme="a">
+	<div data-role="header" data-theme="b">
 		<a href="index.html" data-rel="back" data-icon="back" data-theme="a" >Back</a> <!-- data-iconpos="notext" -->
 		<h1>Events</h1>
 	</div><!-- /header -->
@@ -229,7 +230,7 @@
 			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
 			<div class="ui-btn-inner ui-li">
 				<div class="ui-btn-text">
-					<a href="#event-details" class="ui-link-inherit">
+					<a href="#event-page" class="ui-link-inherit">
 					<img src="http://www.katehudsondesign.com/uploads/t1nygrab/Screen%20Shot%202012-05-28%20at%206.43.07%20PM.png" class="ui-li-thumb">
 					<h3 class="ui-li-heading">Rendezvous with Madness</h3>
 					<p class="ui-li-desc">
@@ -243,7 +244,7 @@
 			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
 			<div class="ui-btn-inner ui-li">
 				<div class="ui-btn-text">
-					<a href="#event-details" class="ui-link-inherit">
+					<a href="#event-page" class="ui-link-inherit">
 					<img src="media/img3.jpg" class="ui-li-thumb"> <!-- REPLACE IMAGE -->
 					<h3 class="ui-li-heading">Being Scene</h3>
 					<p class="ui-li-desc">
@@ -257,11 +258,11 @@
 			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
 			<div class="ui-btn-inner ui-li">
 				<div class="ui-btn-text">
-					<a href="#event-details" class="ui-link-inherit">
+					<a href="#event-page" class="ui-link-inherit">
 					<img src="media/img6.jpg" class="ui-li-thumb"> <!-- REPLACE IMAGE -->
 					<h3 class="ui-li-heading">Mad Couture Catwalk</h3>
 					<p class="ui-li-desc">
-						A runway-style presentation of wearable couture
+						A runway-style presentation
 					</p>
 					</a>
 				</div>
@@ -282,19 +283,19 @@
 			</ul>
 		</div>
 	</div><!-- /footer -->
-
 </div><!-- /page -->
-<div data-role="page" id="event-details">
-	<div data-role="header" data-theme="a">
+
+
+<div data-role="page" id="event-page">
+	<div data-role="header" data-theme="b">
 		<a href="index.html" data-rel="back" data-icon="back" data-theme="a">Back</a>
 		<h1>Rendezvous with Madness</h1>
 	</div><!-- /header -->
 	<div data-role="content" data-theme="a">	
 		<ul data-role="listview" data-theme="g">
 			<img src="http://www.katehudsondesign.com/uploads/t1nygrab/Screen%20Shot%202012-05-28%20at%206.20.03%20PM.png">
-			<li><a href="#">Event Details</a></li>
+			<li><a href="#event-details">Event Details</a></li>
 			<li><a href="#">Trailers</a></li>
-			<li><a href="#">Buy Tickets</a></li>
 			<li><a href="#">Get Involved</a></li>
 		</ul>
 	</div><!-- /content -->
@@ -311,8 +312,36 @@
 
 </div><!-- /page -->
 
+
+<div data-role="page" id="event-details">
+	<div data-role="header" data-theme="b">
+		<a href="index.html" data-rel="back" data-icon="back" data-theme="a">Back</a>
+		<h1>Rendezvous with Madness</h1>
+	</div><!-- /header -->
+	<div data-role="content" data-theme="a">
+    	<img src="http://www.katehudsondesign.com/uploads/t1nygrab/Screen%20Shot%202012-05-28%20at%206.20.03%20PM.png">
+        <h4>November 9-7, 2012</h4>
+        <h3>About </h3>
+        <p> Mental illness and addiction are fundamental parts of our human experience and they have always been difficult to present and discuss in the public arena. Fear and stigma routinely make accurate representations and presentations next to impossible.</p>
+		<p>The vehicle through which mental illness and addiction are most often presented publicly is mainstream film. Through these films the public can, in most instances, sit back and watch from a safe distance. Audiences are secure in the belief that they are watching the experiences of others and remain divorced from the realities of society.</p>
+        <button type="submit" data-theme="c" style="padding:12px 0">Buy Tickets</button>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+			<ul>
+				<li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
+				<li><a href="#events" id="events-btn" data-icon="custom" class="ui-btn-active ui-state-persist" >Events</a></li>
+				<li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div><!-- /page -->
+
+
 <div data-role="page" id="about">
-	<div data-role="header" data-theme="a">
+	<div data-role="header" data-theme="c">
 		<a href="index.html" data-rel="back" data-icon="back" data-theme="a">Back</a>
 		<h1>About</h1>
 	</div><!-- /header -->
@@ -345,22 +374,6 @@
 
 </div><!-- /page -->
 
-
-
-<!-- jQuery AT THE BOTTOM for faster load time?
-
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	
-    <link rel="stylesheet" href="css/themes/default/jquery.mobile.css" />
-	<link rel="stylesheet" href="css/themes/BareBones/BareBones.css" /> 
-	<link rel="stylesheet" href="mini-gallery/mini-gallery.css" />
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.mobile-1.1.0.js"></script>
-	<script src="js/jquery.isotope.min.js"></script>
-	<script src="js/scripts.js"></script>
-	-->
 
 </body>
 </html>
