@@ -38,6 +38,29 @@ li[data-role="list-divider"] {
 .content-secondary .ui-collapsible-content { padding: 0; }
 .content-secondary .ui-listview { margin: 0; }
 
+/* LEARN MORE use as div class */
+.learn{
+	position: relative;
+	padding:15px 15px;
+}
+
+/* APPRECIATE BUTTON */
+.appreciate a {
+ outline: none;/* get rid of dotted borders in FireFox */
+ text-indent: -5000px ;/* this move the text outside of the screen area */
+ margin: 10px auto;
+ display:block;
+ width:150px;
+ height:150px;
+ background: url("media/appreciate2.png") 0 0 no-repeat;
+ }
+ .appreciate a:hover {
+ background-position: -150px 0;
+ }
+ .appreciate a:active {
+ background-position: -300px 0;
+ }
+
 /* IMAGE DETAILS */
 .img-container { 
 	position: relative; 
