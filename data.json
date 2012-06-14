@@ -1,136 +1,4 @@
-$(document).ready( function(){
-
-	//hide iPhone chrome
-	window.scroll = 0;
-
-	var $container = $('#gallery-container'),
-			imgDir = "media/",
-			imgPrefix = "img",
-			imgFiletype = "jpg",
-			viewData;
-	
-	//$container.hide(); //show on imagesLoaded
-
-	var artworks = {
-		artworks: [
-        {
-          "src" : "Alan_Parker_toronto_island.jpg",
-          "title": "Toronto Island Summer Idyl",
-          "description": "",
-          "medium": "oil",
-          "size": "48\" x 36\"",
-          "date": "2011-04-10",
-          "price": "300.00"
-        },
-        {
-          "src" : "Alan-Parker_fountain.jpg",
-          "title": "Fountain",
-          "description": "",
-          "medium": "oil",
-          "size": "36\" x 30\"",
-          "date": "2010-08-19",
-          "price": "300.00"
-        },
-        {
-          "src" : "Alan-Parker-Over-Cloud-Winter.jpg",
-          "title": "Over Cloud, Winter",
-          "description": "",
-          "medium": "oil",
-          "size": "36\" x 30\"",
-          "date": "2011-01-17",
-          "price": "300.00"
-        },
-        {
-          "src" : "Alan-Parker-Shining-Dawn.jpg",
-          "title": "Shining Dawn",
-          "description": "",
-          "medium": "oil",
-          "size": "48\" x 36\"",
-          "date": "2011-11-10",
-          "price": "300.00"
-        },
-        {
-          "src" : "Alan-Parker-Winter-Late-Afternoon.jpg",
-          "title": "Winter, Late Afternoon",
-          "description": "",
-          "medium": "oil",
-          "size": "36\" x 30\"",
-          "date": "2012-04-10",
-          "price": "300.00"
-        }
-      ]
-	};
-	//Load mustchache!!!
-  $.Mustache.load( "../templates/template.html")
-    .done(function() {  
-      $("#gallery-container").mustache( "artists", artworks );
-  });
-
-  /*
-	$.Mustache.load( "../templates/template.html")
-		.done(function( data ) { 	
-			$.getJSON( "../data.json", function(viewData){
-
-					$container.mustache( '#artwork', artworks, { method: 'html' } );
-					//details images
-					$(".mini-gallery a").click(function(){
-						$("#img-details #big-img").attr("src", imgDir + imgPrefix + $(this).attr("for") + "." + imgFiletype );
-					});
-				});
-		});
-*/
-
-
-	//isotope
-	/*
-	(function(){
-		$container.imagesLoaded( function(){
-			$container.fadeIn();
-		    $container.isotope({
-		      itemSelector: 'li',
-		      getSortData: {
-				index : function( $elem ){
-						var index =  $elem.find("a").attr("for")
-						return index;
-					}
-				}
-		    });
-
-		    $container.isotope( "reLayout" );
-
-		  	// update columnWidth on window resize
-			$(window).smartresize(function(){
-			  $container.isotope({
-			    masonry: { columnWidth: $container.width() / 3 }
-			  });
-			});
-
-			//Details
-			$(".img-container .learn-more").click(function(){
-
-			})
-
-			//Reload on page load
-			$('#home').live('pageshow', function () {
-			 		$container.isotope( "reLayout" );
-			});
-
-			//Sorting buttons
-			$("#ideas-btn").click(function(){
-				$container.isotope({ 
-					sortBy: "index"
-				});
-			});
-			$("#skull-btn").click(function(){
-				$container.isotope("shuffle");
-			});
-	  });	
-
-	}()); //isotope
-*/
-
-
-var sampleData = {
+{
   "artists": [
     {
       "firstName" : "Alan",
@@ -569,7 +437,7 @@ var sampleData = {
           "country": "USA",
           "srcVimeo": "",
           "srcYoutube": "http://www.youtube.com/watch?v=njt0muCyAdc"
-        }
+        }       
       ]
     },
     {
@@ -661,6 +529,6 @@ var sampleData = {
       ]
     }
   ]
-};
+}
 
-}); //ready
+  
