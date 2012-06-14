@@ -7,22 +7,62 @@ body {
 /* ---/ Typograpgy ------------------------------- */
 
 .ui-header {
-	font-family: "Cartogothic", sans-serif;
-	font-weight: 400;
+	font-family: "Merriweather", sans-serif;
+	color: #444;
+	border: none;
+	overflow: visible;
+	z-index: 100000;
+	height: 50px;
+}
+.ui-header h1.ui-title {
+	line-height: 50px;
+	margin: 0;
+	font-weight: 600;
+	font-size: 20px;
+	text-shadow: 0 1px white;
 }
 .ui-header .ui-title.giant {
+	position: absolute;
+	left: 20px;
+	top: -5px;
   font-size: 1.3em;
   margin: 0;
-  margin-top: .2em;
+  width: 90px;
+  height: 80px;
+  background: url("media/wa-logo.png") no-repeat, #EEE;
+  background-size: 80px;
+  border: none;
+  box-shadow: 0 4px 8px -5px rgba(0,0,0,.9);
+  border-radius: 8px;
 }
 .ui-header p {
 	font-size: .9em;
+}
+
+.ui-bar-a {
+	background: #EEE;
 }
 
 li[data-role="list-divider"] {
   text-transform: uppercase;
 }
 .ui-listview li.ui-li {  padding: 3px; }
+
+div[data-role="content"] .ui-block-a, 
+div[data-role="content"] .ui-block-b, 
+div[data-role="content"] .ui-block-c, 
+div[data-role="content"] .ui-block-d, 
+div[data-role="content"] .ui-block-e {
+	margin: 10px 0;
+}
+
+
+#img-details .ui-li > .ui-btn-inner {
+	display: block;
+	position: relative;
+	padding: 0;
+	border: none;
+}
 
 /* ICONS */
 /* Add our actual icons here .... */

@@ -1,8 +1,8 @@
-<script id="artwork" type="text/html">
+<script id="gallery" type="text/html">
 <ul class="mini-gallery">
 {{#artists}}
 {{#artworks}}
-  <li><a href="#img-details" for="{{title}}" data-transition="fade"><img src="media/{{src}}" ></a></li>
+  <li><a href="#img-details" data-artist="{{artistindex}}" data-artwork="{{artindex}}" data-transition="fade"><img src="media/{{src}}" ></a></li>
 {{/artworks}}
 {{/artists}}
 </ul>
@@ -18,4 +18,304 @@
       </ul>
     </div>
   </div><!-- /footer -->
+</script>
+
+
+
+
+<script id="artwork" type="text/html">
+{{#artwork}}
+<div class="img-container"> 
+  <img id="big-img" src="media/{{src}}"> 
+</div>
+<div class="ui-grid-a">
+  <div class="ui-block-a">Title: {{title}}</div>
+  <div class="ui-block-b">Medium: {{medium}}</div>
+  <div class="ui-block-a">Size: {{size}}</div>
+  <div class="ui-block-b">Date: {{date}}</div>
+</div><!-- /grid-b -->
+{{/artwork}}    
+<div data-role="content" data-theme="a">
+  <ul data-role="listview" data-theme="g">
+    <li><a role="button" data-theme="b" class="learn-more-btn" href="#img-learn-more">Learn More</a></li>
+  </ul>
+</div>
+<p></p>
+<div data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
+  <div class="ui-btn-inner ui-li">
+    <div class="ui-btn-text">
+      <a href="#author-details" class="ui-link-inherit author-details-btn">
+      <img src="media/person-thumb.png" class="ui-li-thumb">
+      {{#artist}}
+      <h3 class="ui-li-heading">{{firstName}} {{lastName}}</h3>
+      {{/artist}}
+      </a>
+    </div>
+    <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+  </div>
+</div>
+
+<button type="submit" data-theme="b" >Appreciate</button>
+</script>
+
+
+
+
+
+<script id="author">
+ <div data-role="header" data-theme="a">
+    <a href="#img-details" data-rel="back" data-icon="back" data-theme="a">Back</a>
+    <h1>{{firstName}} {{lastName}}</h1>
+  </div><!-- /header -->
+  
+  <div data-role="content" data-theme="a">
+    <fieldset class="ui-grid-a">
+      <div class="ui-block-a"><img src="media/person.jpg"></div>
+      <p>{{bio}}</p>
+    </fieldset>
+    <fieldset class="ui-grid-a">
+      <div class="ui-block-a"><button type="submit" data-theme="b">Appreciate</button></div>
+      <div class="ui-block-b"><button type="submit" data-theme="c">Contact</button></div>    
+    </fieldset>
+  </div><!-- /content -->
+</script>
+
+
+<script id="events">
+{{#events}}
+  <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
+  <div class="ui-btn-inner ui-li">
+    <div class="ui-btn-text">
+      <a href="#event-details" class="ui-link-inherit">
+      <img src="{{splash}}" class="ui-li-thumb">
+      <h3 class="ui-li-heading">{{title}}</h3>
+      <p class="ui-li-desc">
+        {{description}}
+      </p>
+      </a>
+    </div>
+    <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+  </div>
+  </li>
+  {{/events}}
+</script>
+
+
+
+<script id="template" type="text/html">
+<!-- GALLERY
+========================================================== -->
+<div data-role="page" id="home" class="type-home">
+  <div data-role="header" data-theme="a">
+    <h1 class="giant">Workman Arts</h1>
+    <p style="text-align: center;margin:0">Artists with extraordinary minds</p>
+  </div>
+  <div data-role="content" data-theme="a" >
+    <ul class="mini-gallery">
+    {{#artists}}
+      {{#artworks}}
+      <li><a href="#img-details" for="{{title}}" data-transition="fade"><img src="media/{{src}}" ></a></li>
+      {{/artworks}}
+    {{/artists}}
+    </ul>
+  </div>
+  {{>footer}}
+</div><!-- /page -->
+
+<!-- IMAGE DETAILS
+========================================================== -->
+<div data-role="page" id="img-details">
+
+  <div data-role="header" data-theme="a" >
+    <a href="index.html" data-rel="back" data-theme="a" data-icon="back">Back</a>
+    <h1>ARTWORK</h1>
+  </div><!-- /header -->
+
+  <div data-role="content" data-theme="a">
+    <div class="img-container"> 
+      <img id="big-img" src="media/{{src}}.jpg"> 
+    </div>
+    <div class="ui-grid-a">
+      <div class="ui-block-a">Title: {{artwork.title}}</div>
+      <div class="ui-block-b">Medium: {{artwork.medium}}</div>
+      <div class="ui-block-a">Size: {{artwork.size}}</div>
+      <div class="ui-block-b">Date: {{artwork.date}}</div>
+    </div><!-- /grid-b --> 
+    <div data-role="content" data-theme="a">
+      <ul data-role="listview" data-theme="g">
+        <li><a href="#img-learn-more">Learn More</a></li>
+      </ul>
+    </div>
+        
+    <div data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
+      <div class="ui-btn-inner ui-li">
+        <div class="ui-btn-text">
+          <a href="#author-details" class="ui-link-inherit">
+          <img src="media/userthumbnail.jpg" class="ui-li-thumb">
+
+          <h3 class="ui-li-heading">{{artist.firstName}} {{artist.lastName}}</h3>
+          </a>
+        </div>
+        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+      </div>
+    </div>
+
+    <button type="submit" data-theme="b" >Appreciate</button>
+
+  </div>
+  {{>footer}}
+</div><!-- /page -->
+
+<!-- IMAGE LEARN MORE
+========================================================== -->
+<div data-role="page" id="img-learn-more">
+  <div data-role="header" data-theme="a">
+    <a href="index.html" data-rel="back" data-theme="a" data-icon="back">Back</a>
+    <h1>{{title}}</h1>
+  </div><!-- /header -->
+
+  <div data-role="content" data-theme="a">
+    <p>Northern Europe in the 15th century was deeply influenced by the mystical religious 
+    movement devotio moderna, exemplified by Thomas a Kempis and his Imitation of Christ, in 
+    which emotion and prayerful imagination of scenes from the life of Christ are encouraged in 
+    order to enhance one's feelings of being actually present as the sacred mysteries unfold. 
+    Rogier's religious figures suffer, mourn, bear witness or simply exist with dignified 
+    pathos, their controlled and restrained yet eminently expressive sentiments made real 
+    through subtle facial expressions, the dramatic twisting of hands and fingers, even the 
+    rhythmic torment of the folds of a garment.</p>
+
+    <p>The foremost example of Rogier's passionate pictorial skill can be found in his great 
+    early masterpiece, the Descent from the Cross of around 1435, now in Madrid's Prado Museum.
+    Too delicate to be shipped abroad, the painting was represented in Leuven by a specially-
+    made video montage. Rogier has chosen a quietly dramatic moment at the conclusion of 
+    Christ's violent passion to evoke a broad expression of the emotions of participants in the 
+    drama, stimulating in turn an affective response in the viewer.</p>
+  </div><!-- /content -->
+  {{>footer}}
+</div><!-- /page -->
+
+<!-- AUTHOR DETAILS
+========================================================== -->
+<div data-role="page" id="author-details">
+  <div data-role="header" data-theme="a">
+    <a href="#img-details" data-rel="back" data-icon="back" data-theme="a">Back</a>
+    <h1>{{firstName}} {{lastName}}</h1>
+  </div><!-- /header -->
+  
+  <div data-role="content" data-theme="a">
+    <fieldset class="ui-grid-a">
+      <div class="ui-block-a"><img src="media/img5.jpg"></div>
+      <p>{{bio}}</p>
+    </fieldset>
+    <fieldset class="ui-grid-a">
+      <div class="ui-block-a"><button type="submit" data-theme="b">Appreciate</button></div>
+      <div class="ui-block-b"><button type="submit" data-theme="c">Contact</button></div>    
+    </fieldset>
+  </div><!-- /content -->
+  {{>footer}}
+</div><!-- /page -->
+
+<!-- EVENTS
+========================================================== -->
+<div data-role="page" id="events">
+  <div data-role="header" data-theme="a">
+    <a href="index.html" data-rel="back" data-icon="back" data-theme="a" >Back</a> <!-- data-iconpos="notext" -->
+    <h1>Events</h1>
+  </div><!-- /header -->
+
+  <div data-role="content" class="ui-content" role="main">  
+    <ul data-role="listview" class="ui-listview" >
+      {{#events}}
+      <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
+      <div class="ui-btn-inner ui-li">
+        <div class="ui-btn-text">
+          <a href="#event-details" class="ui-link-inherit">
+          <img src="{{splash}}" class="ui-li-thumb">
+          <h3 class="ui-li-heading">{{title}}</h3>
+          <p class="ui-li-desc">
+            {{description}}
+          </p>
+          </a>
+        </div>
+        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+      </div>
+      </li>
+      {{/events}}
+      <!--
+      <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
+      <div class="ui-btn-inner ui-li">
+        <div class="ui-btn-text">
+          <a href="#event-details" class="ui-link-inherit">
+          <img src="media/img3.jpg" class="ui-li-thumb"> 
+          <h3 class="ui-li-heading">Being Scene</h3>
+          <p class="ui-li-desc">
+            Art Exhibition
+          </p>
+          </a>
+        </div>
+        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+      </div>
+      </li>
+      <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
+      <div class="ui-btn-inner ui-li">
+        <div class="ui-btn-text">
+          <a href="#event-details" class="ui-link-inherit">
+          <img src="media/img6.jpg" class="ui-li-thumb"> 
+          <h3 class="ui-li-heading">Mad Couture Catwalk</h3>
+          <p class="ui-li-desc">
+            A runway-style presentation of wearable couture
+          </p>
+          </a>
+        </div>
+        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+      </div>
+      </li>
+      -->
+    </ul>
+  </div><!-- /content --> 
+  {{>footer}}
+</div><!-- /page -->
+
+<!-- EVENT DETAILS
+========================================================== -->
+<div data-role="page" id="event-details">
+  <div data-role="header" data-theme="a">
+    <a href="index.html" data-rel="back" data-icon="back" data-theme="a">Back</a>
+    <h1>{{title}}</h1>
+  </div><!-- /header -->
+  <div data-role="content" data-theme="a">  
+    <ul data-role="listview" data-theme="g">
+      <img src="{{splash}}">
+      <li><a href="#">Event Details</a></li>
+      <li><a href="#">Trailers</a></li>
+      <li><a href="#">Buy Tickets</a></li>
+      <li><a href="#">Get Involved</a></li>
+    </ul>
+  </div><!-- /content -->
+  {{>footer}}
+</div><!-- /page -->
+
+<!-- ABOUT
+========================================================== -->
+<div data-role="page" id="about">
+  <div data-role="header" data-theme="a">
+    <a href="index.html" data-rel="back" data-icon="back" data-theme="a">Back</a>
+    <h1>About Workman Arts</h1>
+  </div><!-- /header -->
+  <div data-role="content" data-theme="a">
+    <h4>Vision</h4>
+    <p>Workman Arts is an arts and mental health company known internationally for its artistic 
+    collaborations, presentations, knowledge exchange, best practices, and research in the area 
+    of the impact of the arts on the quality of life of people living with mental illness and 
+    addiction.</p>
+
+    <h4>Mission</h4>
+    <p>Workman Arts (WA) facilitates aspiring, emerging and established artists with mental 
+    illness and addiction issues to develop and refine their art form through its arts training 
+    programs, public performance/exhibit opportunities and partnering with other art 
+    organizations. As well, WA promotes a greater public understanding of mental illness and 
+    addiction through the creation, presentation and discussion of the artistic media.</p>
+  </div><!-- /content -->
+  {{>footer}}
+</div><!-- /page -->
 </script>

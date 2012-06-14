@@ -3,28 +3,56 @@ $(document).ready( function(){
   //hide iPhone chrome
   window.scroll = 0;
 
-  var $container = $('#gallery-container'),
-      imgDir = "media/",
+  var imgDir = "media/",
       imgPrefix = "img",
       imgFiletype = "jpg",
       viewData;
   
-  $container.hide(); //show on imagesLoaded
+  //Hide gallery initially
+  $("#gallery-container").hide();
 
   $.Mustache.load( "../templates/template.html")
-    .done(function( data ) {  
-      console.log( data );
+    .done(function( data ) {
       $.getJSON( "../data.json", function(viewData){
-          console.log( $.Mustache.templates() );
-          $container.mustache( 'artwork', viewData );
 
-          //details images
-          $(".mini-gallery a").click(function(){
-            $("#img-details #big-img").attr("src", imgDir + imgPrefix + $(this).attr("for") + "." + imgFiletype );
+          $.each( viewData.artists, function( i, artist ) {
+            artist.artistindex = i;
+             $.each( artist.artworks, function( j, artwork ) {
+                artwork.artindex = j;
+              });
           });
 
+
+          var $container;
+          console.log( $.Mustache.templates() );
+          $("#gallery-container").mustache( 'gallery', viewData );
+
+          $container = $('.mini-gallery');
+          //details images
+          $("a", $container).click(function(){
+    
+            var theArtist = viewData.artists[ +$(this).attr("data-artist") ],
+                theArtwork = theArtist.artworks[ +$(this).attr("data-artwork") ],
+                imgDetailsData = { artist: theArtist, artwork: theArtwork };
+
+                $("#img-details-container").mustache("artwork", imgDetailsData, {method:"html"});
+                
+                $(".img-container").click(function(){
+                    $(this).css("max-height", "auto");
+                 });
+
+                $(".author-details-btn").click(function(){
+                  $("#author-details-container").mustache( "author", theArtist, {method: "html"});
+
+                });
+            
+          });
+
+         $("#events-container").mustache("events", viewData, {method:"html"});
+      
+
         $container.imagesLoaded( function(){
-          $container.fadeIn();
+          $("#gallery-container").fadeIn();
           $container.isotope({
             itemSelector: 'li',
             getSortData: {
@@ -37,22 +65,22 @@ $(document).ready( function(){
 
           $container.isotope( "reLayout" );
 
-          // update columnWidth on window resize
-        $(window).smartresize(function(){
-          $container.isotope({
-            masonry: { columnWidth: $container.width() / 3 }
+            // update columnWidth on window resize
+          $(window).smartresize(function(){
+            $container.isotope({
+              masonry: { columnWidth: $container.width() / 3 }
+            });
           });
-        });
 
-        //Details
-        $(".img-container .learn-more").click(function(){
+          //Details
+          $(".img-container .learn-more").click(function(){
 
-        });
+          });
 
-        //Reload on page load
-        $('#home').live('pageshow', function () {
-            $container.isotope( "reLayout" );
-        });
+          //Reload on page load
+          $('#home').live('pageshow', function () {
+              $container.isotope( "reLayout" );
+          });
 
     
       }); //images loaded
