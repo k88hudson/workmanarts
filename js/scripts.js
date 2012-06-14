@@ -50,7 +50,8 @@ $(document).ready( function(){
 
          $("#events-container").mustache("events", viewData, {method:"html"});
       
-
+         //$("#trailers-container").mustache("trailers", viewData.events[0], {method:"html"});
+      
         $container.imagesLoaded( function(){
           $("#gallery-container").fadeIn();
           $container.isotope({

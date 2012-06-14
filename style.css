@@ -5,10 +5,12 @@ body {
 } 
 
 /* ---/ Typograpgy ------------------------------- */
-
+iframe {
+	width: 100%;
+}
 .ui-header {
 	font-family: "Merriweather", sans-serif;
-	color: #444;
+	//color: #444;
 	border: none;
 	overflow: visible;
 	z-index: 100000;
@@ -40,7 +42,7 @@ body {
 }
 
 .ui-bar-a {
-	background: #EEE;
+	//background: #EEE;
 }
 
 li[data-role="list-divider"] {

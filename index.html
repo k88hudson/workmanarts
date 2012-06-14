@@ -143,7 +143,7 @@
   </div><!-- /header -->
   <div data-role="content" data-theme="a">  
     <ul data-role="listview" data-theme="g">
-      <img src="{{splash}}">
+      <img src="media/splash.jpg">
       <li><a href="#">Event Details</a></li>
       <li><a href="#trailers">Trailers</a></li>
       <li><a href="#">Buy Tickets</a></li>
@@ -161,7 +161,24 @@
   </div>
 </div><!-- /page -->
 <div data-role="page" id="trailers">
-  
+   <div data-role="header" data-theme="a">
+    <a href="index.html" data-rel="back" data-icon="back" data-theme="a">Back</a>
+    <h1>Trailers</h1>
+  </div><!-- /header -->
+  <div data-role="content" id="trailers-container" data-theme="a">  
+<iframe src="http://player.vimeo.com/video/43885366" width="460"  height="258" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe src="http://player.vimeo.com/video/37145460" width="460" height="258" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+  </div>
+   <div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
+    <div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+      <ul>
+        <li><a href="#home" data-role="button" id="gallery-btn" data-icon="custom" >Gallery</a></li>
+        <li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+        <li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <!-- ABOUT

@@ -36,9 +36,8 @@
 </div><!-- /grid-b -->
 {{/artwork}}    
 <div data-role="content" data-theme="a">
-  <ul data-role="listview" data-theme="g">
-    <li><a role="button" data-theme="b" class="learn-more-btn" href="#img-learn-more">Learn More</a></li>
-  </ul>
+
+    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="g" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-g"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a role="button" data-theme="b" class="learn-more-btn ui-link-inherit" href="#img-learn-more">Learn More</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
 </div>
 <p></p>
 <div data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
@@ -87,7 +86,7 @@
   <div class="ui-btn-inner ui-li">
     <div class="ui-btn-text">
       <a href="#event-details" class="ui-link-inherit">
-      <img src="{{splash}}" class="ui-li-thumb">
+      <img src="media/splash.jpg" class="ui-li-thumb">
       <h3 class="ui-li-heading">{{title}}</h3>
       <p class="ui-li-desc">
         {{description}}
@@ -100,6 +99,11 @@
   {{/events}}
 </script>
 
+<script id="trailers">
+{{#trailers}}
+<iframe src="http://player.vimeo.com/video/43885366" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+{{/trailers}}
+</script>
 
 
 <script id="template" type="text/html">
@@ -142,9 +146,7 @@
       <div class="ui-block-b">Date: {{artwork.date}}</div>
     </div><!-- /grid-b --> 
     <div data-role="content" data-theme="a">
-      <ul data-role="listview" data-theme="g">
-        <li><a href="#img-learn-more">Learn More</a></li>
-      </ul>
+      <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="g" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-g"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a role="button" data-theme="b" class="learn-more-btn ui-link-inherit" href="#img-learn-more">Learn More</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
     </div>
         
     <div data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">
