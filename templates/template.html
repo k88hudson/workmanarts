@@ -1,13 +1,21 @@
 <script id="artwork" type="text/html">
 <ul class="mini-gallery">
+{{#artists}}
 {{#artworks}}
- hello world
-  <li><a href="#img-details" for="{{title}}" data-transition="fade"><img src="{{src}}" ></a></li>
+  <li><a href="#img-details" for="{{title}}" data-transition="fade"><img src="media/{{src}}" ></a></li>
 {{/artworks}}
+{{/artists}}
 </ul>
 </script>
-<script id="test" type="text/html">
-  {{#hello}}
-  bloop
-  {{/hello}}
+
+<script id="footer-menu" type="text/html">
+ <div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
+    <div data-role="navbar" class="nav-glyphish-example" data-grid="b">
+      <ul>
+        <li><a href="#home" data-role="button" id="gallery-btn" data-icon="custom" >Gallery</a></li>
+        <li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
+        <li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
+      </ul>
+    </div>
+  </div><!-- /footer -->
 </script>

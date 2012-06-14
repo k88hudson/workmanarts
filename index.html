@@ -25,22 +25,12 @@
   </div>
 
   <div data-role="content" data-theme="a" >
-
     <div id="gallery-container" class="content-primary">
-      <!-- this is where the gallery goes -->
+      <!-- This is where the gallery goes -->
     </div>
-    
   </div>
 
-  <div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
-    <div data-role="navbar" class="nav-glyphish-example" data-grid="b">
-      <ul>
-        <li><a href="#home" data-role="button" id="gallery-btn" data-icon="custom" >Gallery</a></li>
-        <li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-        <li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
+	<div class="footer-container"><!-- This is where the menu goes --></div>
   
 
 </div><!-- /page -->
@@ -89,15 +79,7 @@
     
   </div><!-- /content -->
 
-  <div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
-    <div data-role="navbar" class="nav-glyphish-example" data-grid="b">
-      <ul>
-        <li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
-        <li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-        <li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
-      </ul>
-    </div>
-  </div>
+  <div class="footer-container"><!-- This is where the menu goes --></div>
 
 </div><!-- /page -->
 
@@ -125,15 +107,7 @@
     
   </div><!-- /content -->
 
-  <div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
-    <div data-role="navbar" class="nav-glyphish-example" data-grid="b">
-      <ul>
-        <li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
-        <li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-        <li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
-      </ul>
-    </div>
-  </div>
+  <div class="footer-container"><!-- This is where the menu goes --></div>
 
 </div><!-- /page -->
 
@@ -225,15 +199,7 @@
     
   </div><!-- /content -->
   
-  <div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-id="foot" data-position="fixed">
-    <div data-role="navbar" class="nav-glyphish-example" data-grid="b">
-      <ul>
-        <li><a href="#home" data-role="button" id="gallery-btn" data-icon="custom" >Gallery</a></li>
-        <li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-        <li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
-      </ul>
-    </div>
-  </div><!-- /footer -->
+ 	<div class="footer-container"><!-- This is where the menu goes --></div>
 
 </div><!-- /page -->
 <div data-role="page" id="event-details">
@@ -284,15 +250,7 @@
     
   </div><!-- /content -->
 
-  <div data-role="footer" class="nav-glyphish-example mobile-only" data-theme="a" data-position="fixed">
-    <div data-role="navbar" class="nav-glyphish-example" data-grid="b">
-      <ul>
-        <li><a href="#home" id="gallery-btn" data-icon="custom" >Gallery</a></li>
-        <li><a href="#events" id="events-btn" data-icon="custom">Events</a></li>
-        <li><a href="#about" id="info-btn" data-icon="custom">About</a></li>
-      </ul>
-    </div>
-  </div>
+  <div class="footer-container"><!-- This is where the menu goes --></div>
 
 </div><!-- /page -->
 
@@ -301,19 +259,8 @@
   <script src="js/jquery.mobile-1.1.0.js"></script>
   <script src="js/jquery.isotope.min.js"></script>
   <script src="js/jquery.mustache.js"></script>
-
+  <script src="js/mustache.js"></script>
   <script src="js/scripts.js"></script>
-
-  <script id="artwork" type="text/html">
-  <ul class="mini-gallery">
-  {{#artworks}}
-   hello world
-    <li><a href="#img-details" for="{{title}}" data-transition="fade"><img src="{{src}}" ></a></li>
-  {{/artworks}}
-  </ul>
-  </script>
-
-
 
 </body>
 </html>
